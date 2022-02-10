@@ -1,0 +1,199 @@
+.mob_casinos {
+    position: relative;
+    text-align: center;
+
+    @media(max-width:576px) {
+        text-align: left;
+    }
+}
+
+.mob_casinos_bg_desk {
+    position: absolute;
+    top: -180px;
+    height: 829px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media(max-width:991px) {
+        display: none;
+    }
+}
+
+.mob_casinos_bg_desk_green {
+    left: -85px;
+    width: 405px;
+
+    @media(max-width:1200px) {
+        left: -155px;
+    }
+}
+
+.mob_casinos_bg_desk_red {
+    right: -85px;
+    width: 450px;
+
+    @media(max-width:1200px) {
+        right: -155px;
+    }
+}
+
+.mob_casinos_title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.28;
+    margin-bottom: 15px;
+    color: #fff;
+
+    @media(max-width:576px) {
+        font-size: 24px;
+    }
+}
+
+.mob_casinos_text {
+    max-width: 744px;
+    width: 100%;
+    margin: 0 auto 24px;
+    font-size: 18px;
+    line-height: 1.53;
+
+    @media(max-width:576px) {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
+
+.mob_casinos_box {
+    position: relative;
+    z-index: 2;
+    max-width: 824px;
+    width: 100%;
+    padding: 17px 84px;
+    margin: 0 auto 40px;
+    background-color: #151F31;
+    border-radius: 12px;
+
+    @media(max-width:576px) {
+        padding: 16px 84px 16px 26px;
+        margin-bottom: 15px;
+    }
+}
+
+.mob_casinos_box_text {
+    font-weight: 600;
+    line-height: 1.38;
+
+    @media(max-width:576px) {
+        font-size: 12px;
+        line-height: 1.35;
+    }
+}
+
+.mob_casinos_comparison {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 48px;
+
+    @media(max-width:768px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.mob_casinos_comparison_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    max-width: 345px;
+    width: 100%;
+    max-height: 280px;
+    height: 100%;
+    margin: 0 auto;
+
+    @media(max-width: 768px) {
+        display: block;
+    }
+}
+
+.mob_casinos_comparison_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mob_casinos_list_wrap {
+    overflow: hidden;
+    position: relative;
+    padding: 20px 30px 22px 40px;
+    background-color: #151F31;
+    border-radius: 12px;
+    text-align: left;
+    margin-bottom: 36px;
+
+    @media(max-width:576px) {
+        padding: 15px 21px 0;
+        margin-bottom: 15px;
+    }
+}
+
+.mob_casinos_list {
+    @media(max-width: 768px) {
+        margin-bottom: 120px;
+    }
+}
+
+.mob_casinos_list_title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #fff;
+    margin-bottom: 25px;
+
+    @media(max-width:576px) {
+        font-size: 20px;
+    }
+}
+
+.mob_casinos_item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 18px;
+
+    @media(max-width:576px) {
+        margin-bottom: 15px;
+    }
+}
+
+.mob_casinos_list .mob_casinos_item::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mob_casinos_list_pros .mob_casinos_item::before {
+    background-image: url('../img/mob_casinos/icon_plus.svg');
+}
+
+.mob_casinos_list_cons .mob_casinos_item::before {
+    background-image: url('../img/mob_casinos/icon_minus.svg');
+}
+
+.mob_casinos_list_text {
+    font-size: 18px;
+    line-height: 1.5;
+
+    @media(max-width:576px) {
+        font-size: 15px;
+    }
+}
