@@ -1,0 +1,103 @@
+.best_games {
+    text-align: center;
+
+    @media(max-width:576px) {
+        text-align: left;
+    }
+}
+
+.best_games_box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(119, 185, 255, 0.1);
+    border-radius: 74px;
+    color: #FAF7FF;
+    padding: 5px 13px;
+    max-width: fit-content;
+    margin: 0 auto 15px;
+
+    @media(max-width:576px) {
+        margin: 0 0 10px;
+    }
+}
+
+.best_games_box_img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.best_games_title {
+    max-width: 590px;
+    width: 100%;
+    font-size: 36px;
+    line-height: 1.28;
+    color: #fff;
+    margin: 0 auto 10px;
+
+    @media(max-width:576px) {
+        font-size: 24px;
+    }
+}
+
+.best_games_text {
+    max-width: 795px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.53;
+    margin: 0 auto 50px;
+
+    @media(max-width:576px) {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+}
+
+.best_games_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+
+    @media(max-width:991px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media(max-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-width:360px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.best_games_item {
+    text-align: center;
+    background-color: #151F31;
+    border-radius: 12px;
+    padding: 20px 20px 24px;
+
+    @media(max-width:576px) {
+        padding: 20px 20px 15px;
+    }
+}
+
+.best_games_img {
+    max-width: 62px;
+    width: 100%;
+    max-height: 62px;
+    border-radius: 12px;
+    margin: 0 auto 20px;
+}
+
+.best_games_name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+
+    @media(max-width:576px) {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,45 @@
+.types_gambiling {
+    position: relative;
+    z-index: 1;
+    padding: 35px 0 85px;
+    @media(max-width:576px) {
+        padding: 24px 0 28px;
+    }
+}
+
+.types_gambiling_title {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #fff;
+    @media(max-width:576px) {
+        text-align: left;
+        font-size: 24px;
+    }
+}
+
+.types_gambiling_list {
+    display: grid;
+    grid-template-columns: minmax(200px, 255px) minmax(248px, 448px) minmax(200px, 352px);
+    gap: 30px;
+    @media(max-width:991px) {
+        grid-template-columns:1fr;
+        gap: 12px;
+    }
+}
+
+.types_gambiling_item {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.23;
+    font-weight: 700;
+    padding: 19px 30px;
+    background-color: #1D283A;
+    border-radius: 12px;
+    @media(max-width:576px) {
+       font-size: 15px;
+       padding: 19px 25px;
+    }
+}

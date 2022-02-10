@@ -1,0 +1,141 @@
+.real_money_inner {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    padding: 44px 67px 62px;
+    background: linear-gradient(98.03deg, #EF6451 0.58%, #B50057 70.54%);
+    border-radius: 20px;
+    color: #fff;
+    overflow: hidden;
+
+    @media(max-width:768px) {
+        padding: 44px 67px 0;
+    }
+
+    @media(max-width:576px) {
+        padding: 24px 26px 0 21px;
+    }
+
+}
+
+.real_money_title {
+    font-size: 36px;
+    line-height: 1.28;
+    max-width: 540px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media(max-width:576px) {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+}
+
+.real_money_text_wrap {
+    position: relative;
+    z-index: 2;
+    max-width: 630px;
+    width: 100%;
+    margin-bottom: 30px;
+
+    @media(max-width:576px) {
+        margin-bottom: 20px;
+    }
+}
+
+.real_money_text {
+    font-size: 18px;
+    line-height: 1.5;
+
+    @media(max-width:576px) {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
+
+.real_money_list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 2;
+    @media(max-width:991px) {
+        max-width: 100%;
+    }
+}
+
+.real_money_item {
+    background-color: #fff;
+    border-radius: 12px;
+    max-width: fit-content;
+    margin: 0 10px 10px 0;
+}
+
+.real_money_item_text {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(0, #FF4646 100%, #C2206E 100%);
+    padding: 19px 15px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.22;
+
+    @media(max-width:576px) {
+        font-size: 15px;
+        padding: 12px 15px;
+    }
+}
+
+.real_money_box {
+    position: relative;
+    max-width: 540px;
+    width: 100%;
+    padding: 25px 28px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 9px;
+    z-index: 2;
+}
+
+.real_money_box_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 1.38;
+}
+
+.real_money_img_wrap {
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+
+    @media(max-width:768px) {
+        position: relative;
+        bottom: 0;
+    }
+}
+
+.real_money_img_wrap_desk img {
+    max-width: 566px;
+    width: 100%;
+    max-height: 560px;
+    height: 100%;
+    object-fit: contain;
+
+    @media(max-width:991px) {
+        display: none;
+    }
+}
+
+.real_money_img_wrap_mob img {
+    max-width: 345px;
+    width: 100%;
+    max-height: 259px;
+    height: 100%;
+    display: none;
+    object-fit: contain;
+
+    @media(max-width:991px) {
+        display: block;
+        margin: 0 auto;
+    }
+}

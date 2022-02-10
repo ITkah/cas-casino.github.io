@@ -1,0 +1,32 @@
+.status {
+    position: relative;
+    z-index: 1;
+    padding: 90px 0 60px;
+    text-align: center;
+
+    @media(max-width:576px) {
+        text-align: left;
+        padding: 38px 0 50px;
+    }
+}
+
+.status_title {
+    max-width: 535px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+
+    @media(max-width:576px) {
+        max-width: 100%;
+    }
+}
+
+.status_text {
+    max-width: 730px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.53;
+
+    @media(max-width:576px) {
+        font-size: 15px;
+    }
+}
