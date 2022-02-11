@@ -26,3 +26,9 @@ $('.call_menu, .close_menu').on('click', function () {
 $('.methods_payment_btn').on('click', function () {
     $('.methods_payment_drop').slideToggle();
 });
+
+$('.casino_panel_change_item').on('click', function(e){
+    e.preventDefault();
+    $('.casino_panel_change_item').removeClass('active');
+    $(this).addClass('active');
+});
