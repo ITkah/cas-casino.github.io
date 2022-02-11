@@ -87,6 +87,8 @@
     text-transform: uppercase;
     font-size: 14px;
     line-height: 1.22;
+     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 }
 
 .footer_content {
@@ -130,17 +132,19 @@
 }
 
 .footer_text {
-    font-family: 'Inter', sans-serif;
     font-size: 12px;
     line-height: 1.8;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
 }
 
 .footer_title {
     font-size: 18px;
     line-height: 1.25;
+    color: #fff;
     font-weight: 700;
     margin-bottom: 20px;
-
+     font-family: 'Montserrat', sans-serif;
     @media(max-width:576px) {
         font-size: 14px;
     }
@@ -150,7 +154,8 @@
     font-size: 16px;
     line-height: 1.2;
     color: #FAF7FF;
-
+    font-weight: 400;
+     font-family: 'Montserrat', sans-serif;
     @media(max-width:576px) {
         font-size: 14px;
     }
@@ -191,6 +196,9 @@
 .footer_btn {
     max-width: 167px;
     width: 100%;
+     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
     text-align: center;
     padding: 12px 14px;
 }

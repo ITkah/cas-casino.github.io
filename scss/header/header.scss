@@ -16,12 +16,12 @@
         .header_top_text {
             margin: 0 15px;
             color: #FFF;
-            font: 500 1rem 'Inter', sans-serif;
+            font: 500 14px 'Inter', sans-serif;
         }
         .header_top_link {
             padding: 8px 18px;
             text-align: center;
-            font: 500 1rem 'Inter', sans-serif;
+            font: 600 14px 'Inter', sans-serif;
             border-radius: 6px;
             color: #D8D5DE;
             background: #0B1423;
@@ -94,7 +94,7 @@
                     content: url(../img/header/live.svg);
                     position: absolute;
                     left: 0;
-                    top: 2px;
+                    top: 2.5px;
                 }
             }
             li:nth-child(2) {
@@ -105,7 +105,7 @@
                     content: url(../img/header/casino.svg);
                     position: absolute;
                     left: 0;
-                    top: 2px;
+                    top: 3px;
                 }
             }
             li:nth-child(3) {
@@ -116,7 +116,7 @@
                     content: url(../img/header/star.svg);
                     position: absolute;
                     left: 0;
-                    top: 2px;
+                    top: 1.5px;
                 }
             }
             li {
@@ -145,16 +145,16 @@
                 }
                 a {
                     color: #D8D5DE;
-                    font: 400 1rem 'Inter', sans-serif;
+                    font: 500 16px 'Inter', sans-serif;
                 }
                 .sub-menu {
                     opacity: 0;
                     pointer-events: none;
                     position: absolute;
-                    padding: 30px 15px;
+                    padding: 25px 15px;
                     background: #1D283A;
                     top: 185%;
-                    min-width: 135px;
+                    min-width: 185px;
                     left: 0;
                     transition: .3s;
                     box-shadow: 0 4px 47px rgba(0, 0, 0, .25);
@@ -194,7 +194,7 @@
                             display: none;
                         }
                         a {
-                            font: 400 .87rem 'Inter', sans-serif;
+                            font: 500 14px 'Inter', sans-serif;
                             color: #fff;
                         }
                     }
@@ -230,7 +230,7 @@
             }
             a {
                 color: #D8D5DE;
-                font: 400 .87rem 'Inter', sans-serif;
+                font: 500 14px 'Inter', sans-serif;
             }
             .sub-menu {
                 position: absolute;
@@ -310,7 +310,7 @@
             position: relative;
             background: #151F31;    
             border-radius: 6px;
-            font: 400 .87rem 'Inter', sans-serif;
+            font: 500 14px 'Inter', sans-serif;
             color: #fff;
             outline: none;
             border: none;
@@ -321,7 +321,7 @@
         }
         input::placeholder {
             color: #A4A6AC;
-            font: 500 .87rem 'Inter', sans-serif;
+            font: 500 14px 'Inter', sans-serif;
         }
         .header_output {
             overflow: hidden;
@@ -347,7 +347,7 @@
             }
             a {
                 display: block;
-                font: 400 .87rem 'Inter', sans-serif;
+                font: 400 14px 'Inter', sans-serif;
                 color: #fff;
                 padding: 8px 20px;
                 transition: .3s;
