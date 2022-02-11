@@ -1,5 +1,5 @@
 .methods_payment {
-    padding: 70px 0 50px;
+    padding: 70px 0 10px;
     background-color: #151F31;
     border-radius: 36px 36px 0px 0px;
 }
@@ -21,10 +21,19 @@
     max-width: 990px;
     width: 100%;
     margin-bottom: 40px;
+
+    @media(max-width:576px) {
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
 }
 
 .methods_payment_body {
     margin-bottom: 45px;
+
+    @media(max-width:800px) {
+        margin-bottom: 15px;
+    }
 }
 
 .methods_payment_category {
@@ -58,6 +67,9 @@
 
     @media(max-width:800px) {
         display: block;
+        background-color: #0B1423;
+        border-radius: 12px;
+        padding: 15px 20px 8px;
     }
 }
 
@@ -74,27 +86,78 @@
     @media(max-width:800px) {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #1D283A;
+        font-size: 15px;
+        padding: 12px 0;
     }
 }
 
 .methods_payment_content_item::before {
     display: none;
     content: attr(data-label);
-    float: left;
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 12px;
+    line-height: 0;
+    font-weight: 600;
+    color: #A4A6AC;
 
     @media(max-width:800px) {
         display: block;
     }
 }
 
+.methods_payment_content_item:nth-child(1) .methods_payment_content_img {
+    @media(max-width:800px) {
+        margin: 0 auto;
+    }
+}
+
+.methods_payment_content_item:nth-child(1)::before {
+    @media(max-width:800px) {
+        display: none;
+    }
+}
+
 .methods_payment_content_item:nth-child(5) {
     text-align: center;
+
+    @media(max-width:800px) {
+        border-bottom: none;
+    }
+}
+
+.methods_payment_drop {
+    display: block;
+    @media(max-width:800px) {
+        display: none;
+    }
 }
 
 .methods_payment_content_span {
     background-color: #1D283A;
     border-radius: 7px;
     padding: 7px 32px 7px 13px;
+
+    @media(max-width:576px) {
+        padding: 7px 18px;
+    }
+}
+
+.methods_payment_btn {
+    display: none;
+    max-width: 263px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1.22;
+    font-weight: 700;
+    padding: 21px 44px;
+    border: transparent;
+
+    @media(max-width:800px) {
+        display: block;
+    }
+
+    @media(max-width:576px) {
+        max-width: 100%;
+    }
 }
