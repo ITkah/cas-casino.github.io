@@ -21,12 +21,14 @@
 }
 
 .status_text {
+    font: 400 18px/27.5px 'Inter', sans-serif;
+
     max-width: 730px;
     margin: 0 auto;
     font-size: 18px;
     line-height: 1.53;
 
     @media(max-width:576px) {
-        font-size: 15px;
+        font: 400 15px/23.5px 'Inter', sans-serif;
     }
 }
