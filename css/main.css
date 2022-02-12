@@ -19,10 +19,6 @@ body {
   overflow-x: hidden; }
 
 body {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.7;
   color: #D8D5DE; }
 
 .container {
@@ -76,15 +72,12 @@ a {
 
 .title_text {
   position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
-  line-height: 1.28;
-  font-weight: 700;
+  font: 700 36px/46px 'Montserrat', sans-serif;
   text-align: center;
   color: #fff; }
   @media (max-width: 576px) {
     .title_text {
-      font-size: 24px;
+      font: 700 24px/31px 'Montserrat', sans-serif;
       text-align: left; } }
 
 .title_text::before {
@@ -121,6 +114,14 @@ a {
   background: linear-gradient(94.61deg, #FF644F 0.35%, #FF228C 103.27%);
   -webkit-box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
           box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25); }
+
+.btn.disabled {
+  background: #1D283A; }
+
+.btn.disabled:hover {
+  background: #1D283A;
+  -webkit-box-shadow: 0px 4px 17px transparent;
+          box-shadow: 0px 4px 17px transparent; }
 
 .header_top {
   background: -o-linear-gradient(351.97deg, #FF4646 0.58%, #C2206E 70.54%);
@@ -1139,13 +1140,14 @@ a {
       max-width: 100%; } }
 
 .status_text {
+  font: 400 18px/27.5px 'Inter', sans-serif;
   max-width: 730px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 1.53; }
   @media (max-width: 576px) {
     .status_text {
-      font-size: 15px; } }
+      font: 400 15px/23.5px 'Inter', sans-serif; } }
 
 .legal_section {
   position: relative;
@@ -1200,6 +1202,7 @@ a {
       padding: 24px 0 28px; } }
 
 .types_gambiling_title {
+  font: 700 22px/26.8px 'Montserrat', sans-serif;
   text-align: center;
   font-size: 22px;
   line-height: 1.2;
@@ -1209,7 +1212,7 @@ a {
   @media (max-width: 576px) {
     .types_gambiling_title {
       text-align: left;
-      font-size: 24px; } }
+      font: 700 24px/31px 'Montserrat', sans-serif; } }
 
 .types_gambiling_list {
   display: grid;
@@ -1221,16 +1224,13 @@ a {
       gap: 12px; } }
 
 .types_gambiling_item {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  line-height: 1.23;
-  font-weight: 700;
+  font: 700 18px/22px 'Montserrat', sans-serif;
   padding: 19px 30px;
   background-color: #1D283A;
   border-radius: 12px; }
   @media (max-width: 576px) {
     .types_gambiling_item {
-      font-size: 15px;
+      font: 700 15px/18.3px 'Montserrat', sans-serif;
       padding: 19px 25px; } }
 
 .review {
@@ -1298,14 +1298,12 @@ a {
       margin: 0 14px 0 0; } }
 
 .review_name {
-  font-size: 22px;
-  line-height: 1.23;
-  font-weight: 700;
+  font: 700 22px/27.5px 'Inter', sans-serif;
   font-style: italic;
   color: #FAF7FF; }
   @media (max-width: 576px) {
     .review_name {
-      font-size: 16px; } }
+      font: 700 16px/27.5px 'Inter', sans-serif; } }
 
 .review_rev {
   position: relative;
@@ -1333,15 +1331,13 @@ a {
       display: none; } }
 
 .review_rev_text {
+  font: 500 18px/27.5px 'Inter', sans-serif;
+  font-style: italic;
   position: relative;
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 500;
   margin-top: 35px; }
   @media (max-width: 576px) {
     .review_rev_text {
-      font-size: 14px;
-      line-height: 1.75;
+      font: 500 14px/24.5px 'Inter', sans-serif;
       margin-top: 25px; } }
 
 .review_rev_text:first-child {
@@ -1356,24 +1352,19 @@ a {
       margin-bottom: 25px; } }
 
 .review_rаting_mесhаnism_title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 26px;
-  line-height: 1.35;
-  font-weight: 700;
+  font: 700 26px/35.5px 'Montserrat', sans-serif;
   margin-bottom: 12px;
   color: #fff; }
   @media (max-width: 576px) {
     .review_rаting_mесhаnism_title {
-      font-size: 20px;
+      font: 700 20px/28px 'Montserrat', sans-serif;
       margin-bottom: 20px; } }
 
 .review_rаting_mесhаnism_text {
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 400; }
+  font: 400 18px/27.5px 'Inter', sans-serif; }
   @media (max-width: 576px) {
     .review_rаting_mесhаnism_text {
-      font-size: 15px; } }
+      font: 400 15px/23.5px 'Inter', sans-serif; } }
 
 .review_оur_img-wrap {
   display: grid;
@@ -1383,24 +1374,19 @@ a {
       grid-template-columns: 1fr; } }
 
 .review_our_rating_title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.28;
+  font: 700 36px/46px 'Montserrat', sans-serif;
   color: #fff;
   margin-bottom: 23px; }
   @media (max-width: 576px) {
     .review_our_rating_title {
-      font-size: 24px;
+      font: 700 24px/31px 'Montserrat', sans-serif;
       margin-bottom: 10px; } }
 
 .review_оur_rаting_text {
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 400; }
+  font: 400 18px/27.5px 'Inter', sans-serif; }
   @media (max-width: 576px) {
     .review_оur_rаting_text {
-      font-size: 15px; } }
+      font: 400 15px/23.5px 'Inter', sans-serif; } }
 
 .review_оur_img {
   max-width: 450px;
@@ -1422,20 +1408,19 @@ a {
       max-width: 100%; } }
 
 .review_оur_link {
+  font: 700 18px/22px 'Montserrat', sans-serif;
   display: block;
   max-width: 263px;
   padding: 21px 49px;
-  margin-top: 33px;
-  font: 700 18px 'Montserrat', sans-serif; }
+  margin-top: 33px; }
   @media (max-width: 576px) {
     .review_оur_link {
       text-align: center;
       max-width: 100%;
-      font-size: 15px;
-      margin-top: 25px; } }
+      margin-top: 25px;
+      font: 700 15px/18.3px 'Montserrat', sans-serif; } }
 
 .real_money_inner {
-  font-family: 'Montserrat', sans-serif;
   position: relative;
   padding: 44px 67px 62px;
   background: -o-linear-gradient(351.97deg, #EF6451 0.58%, #B50057 70.54%);
@@ -1451,14 +1436,13 @@ a {
       padding: 24px 26px 0 21px; } }
 
 .real_money_title {
-  font-size: 36px;
-  line-height: 1.28;
+  font: 700 36px/46px 'Montserrat', sans-serif;
   max-width: 540px;
   width: 100%;
   margin-bottom: 30px; }
   @media (max-width: 576px) {
     .real_money_title {
-      font-size: 24px;
+      font: 700 24px/31px 'Montserrat', sans-serif;
       margin-bottom: 10px; } }
 
 .real_money_text_wrap {
@@ -1472,12 +1456,10 @@ a {
       margin-bottom: 20px; } }
 
 .real_money_text {
-  font-size: 18px;
-  line-height: 1.5; }
+  font: 500 18px/27.5px 'Montserrat', sans-serif; }
   @media (max-width: 576px) {
     .real_money_text {
-      font-size: 14px;
-      line-height: 1.65; } }
+      font: 500 14px/23px 'Montserrat', sans-serif; } }
 
 .real_money_list {
   position: relative;
@@ -1505,19 +1487,17 @@ a {
   margin: 0 10px 10px 0; }
 
 .real_money_item_text {
+  font: 700 18px/22px 'Montserrat', sans-serif;
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
   background-image: -webkit-gradient(linear, left top, left bottom, from(0), color-stop(100%, #FF4646), to(#C2206E));
   background-image: -o-linear-gradient(0, #FF4646 100%, #C2206E 100%);
   background-image: linear-gradient(0, #FF4646 100%, #C2206E 100%);
-  padding: 19px 15px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.22; }
+  padding: 19px 15px; }
   @media (max-width: 576px) {
     .real_money_item_text {
-      font-size: 15px;
+      font: 700 15px/18.3px 'Montserrat', sans-serif;
       padding: 12px 15px; } }
 
 .real_money_box {
@@ -1530,9 +1510,7 @@ a {
   z-index: 2; }
 
 .real_money_box_text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  line-height: 1.38; }
+  font: 600 16px/22.5px 'Inter', sans-serif; }
 
 .real_money_img_wrap {
   position: absolute;
@@ -1602,26 +1580,21 @@ a {
       right: -155px; } }
 
 .mob_casinos_title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.28;
+  font: 700 36px/46px 'Montserrat', sans-serif;
   margin-bottom: 15px;
   color: #fff; }
   @media (max-width: 576px) {
     .mob_casinos_title {
-      font-size: 24px; } }
+      font: 700 24px/31px 'Montserrat', sans-serif; } }
 
 .mob_casinos_text {
+  font: 400 18px/27.5px 'Inter', sans-serif;
   max-width: 744px;
   width: 100%;
-  margin: 0 auto 24px;
-  font-size: 18px;
-  line-height: 1.53; }
+  margin: 0 auto 24px; }
   @media (max-width: 576px) {
     .mob_casinos_text {
-      font-size: 12px;
-      line-height: 1.6; } }
+      font: 400 12px/19.5px 'Inter', sans-serif; } }
 
 .mob_casinos_box {
   position: relative;
@@ -1638,12 +1611,10 @@ a {
       margin-bottom: 15px; } }
 
 .mob_casinos_box_text {
-  font-weight: 600;
-  line-height: 1.38; }
+  font: 600 16px/22.5px 'Inter', sans-serif; }
   @media (max-width: 576px) {
     .mob_casinos_box_text {
-      font-size: 12px;
-      line-height: 1.35; } }
+      font: 600 12px/16px 'Inter', sans-serif; } }
 
 .mob_casinos_comparison {
   display: grid;
@@ -1692,15 +1663,12 @@ a {
     margin-bottom: 120px; } }
 
 .mob_casinos_list_title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.35;
+  font: 700 26px/35.5px 'Montserrat', sans-serif;
   color: #fff;
   margin-bottom: 25px; }
   @media (max-width: 576px) {
     .mob_casinos_list_title {
-      font-size: 20px; } }
+      font: 700 20px/35.5px 'Montserrat', sans-serif; } }
 
 .mob_casinos_item {
   position: relative;
@@ -1732,11 +1700,10 @@ a {
   background-image: url("../img/mob_casinos/icon_minus.svg"); }
 
 .mob_casinos_list_text {
-  font-size: 18px;
-  line-height: 1.5; }
+  font: 400 18px/27.5px 'Inter', sans-serif; }
   @media (max-width: 576px) {
     .mob_casinos_list_text {
-      font-size: 15px; } }
+      font: 400 15px/23.5px 'Inter', sans-serif; } }
 
 .tips_section {
   text-align: center;
@@ -1764,7 +1731,8 @@ a {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  margin: 0 auto 15px; }
+  margin: 0 auto 15px;
+  font: 600 16px/22.5px 'Inter', sans-serif; }
   @media (max-width: 576px) {
     .tips_section_box {
       margin: 0 0 10px; } }
@@ -1776,31 +1744,27 @@ a {
   margin: 3px 10px 0 0; }
 
 .tips_section_title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.28;
+  font: 700 36px/46px 'Montserrat', sans-serif;
   color: #fff;
   max-width: 790px;
   width: 100%;
   margin: 0 auto 20px; }
   @media (max-width: 576px) {
     .tips_section_title {
-      font-size: 24px;
+      font: 700 24px/31px 'Montserrat', sans-serif;
       margin: 0 0 10px; } }
 
 .tips_section_text {
+  font: 400 18px/27.5px 'Inter', sans-serif;
   max-width: 570px;
   width: 100%;
-  font-size: 18px;
-  line-height: 1.53;
   margin: 0 auto 70px; }
   @media (max-width: 991px) {
     .tips_section_text {
       margin-bottom: 30px; } }
   @media (max-width: 576px) {
     .tips_section_text {
-      font-size: 15px;
+      font: 400 15px/23.5px 'Inter', sans-serif;
       margin: 0 0 25px; } }
 
 .tips_section_list {
@@ -1872,19 +1836,16 @@ a {
       max-height: 97px; } }
 
 .tips_section_item_title {
+  font: 700 22px/26.8px 'Montserrat', sans-serif;
   position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.2;
   padding-left: 51px;
   margin-bottom: 10px;
   color: #fff; }
   @media (max-width: 576px) {
     .tips_section_item_title {
+      font: 700 18px/22px 'Montserrat', sans-serif;
       padding-left: 0;
       max-width: 170px;
-      font-size: 18px;
       margin-bottom: 15px; } }
 
 .tips_section_item_title::before {
@@ -1917,11 +1878,10 @@ a {
       top: -25px; } }
 
 .tips_section_item_text {
-  font-size: 14px;
-  line-height: 1.5; }
+  font: 400 14px/21px 'Inter', sans-serif; }
   @media (max-width: 576px) {
     .tips_section_item_text {
-      font-size: 12px; } }
+      font: 400 12px/19.5px 'Inter', sans-serif; } }
 
 .best_games {
   text-align: center; }
@@ -1945,7 +1905,8 @@ a {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  margin: 0 auto 15px; }
+  margin: 0 auto 15px;
+  font: 600 16px/22.5px 'Inter', sans-serif; }
   @media (max-width: 576px) {
     .best_games_box {
       margin: 0 0 10px; } }
@@ -1957,26 +1918,23 @@ a {
   margin: 0 8px 3px 0; }
 
 .best_games_title {
-  font-family: 'Montserrat', sans-serif;
+  font: 700 36px/46px 'Montserrat', sans-serif;
   max-width: 590px;
   width: 100%;
-  font-size: 36px;
-  line-height: 1.28;
   color: #fff;
   margin: 0 auto 10px; }
   @media (max-width: 576px) {
     .best_games_title {
-      font-size: 24px; } }
+      font: 700 24px/31px 'Montserrat', sans-serif; } }
 
 .best_games_text {
+  font: 400 18px/31px 'Inter', sans-serif;
   max-width: 795px;
   width: 100%;
-  font-size: 18px;
-  line-height: 1.53;
   margin: 0 auto 50px; }
   @media (max-width: 576px) {
     .best_games_text {
-      font-size: 15px;
+      font: 400 15px/24px 'Inter', sans-serif;
       margin-bottom: 30px; } }
 
 .best_games_list {
@@ -2010,14 +1968,11 @@ a {
   margin: 0 auto 20px; }
 
 .best_games_name {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.2;
+  font: 700 22px/27px 'Montserrat', sans-serif;
   color: #fff; }
   @media (max-width: 576px) {
     .best_games_name {
-      font-size: 18px; } }
+      font: 700 18px/22px 'Montserrat', sans-serif; } }
 
 .methods_payment {
   padding: 70px 0 10px;
@@ -2034,14 +1989,13 @@ a {
   margin: 0; }
 
 .methods_payment_text {
-  font-size: 18px;
-  line-height: 1.53;
+  font: 400 18px/27.5px 'Inter', sans-serif;
   max-width: 990px;
   width: 100%;
   margin-bottom: 40px; }
   @media (max-width: 576px) {
     .methods_payment_text {
-      font-size: 15px;
+      font: 400 15px/23.5px 'Inter', sans-serif;
       margin-bottom: 22px; } }
 
 .methods_payment_body {
@@ -2064,8 +2018,7 @@ a {
       display: none; } }
 
 .methods_payment_category_item {
-  line-height: 1.38;
-  font-weight: 600;
+  font: 600 16px/22.5px 'Inter', sans-serif;
   color: #A4A6AC; }
 
 .methods_payment_content {
@@ -2097,9 +2050,7 @@ a {
   border-bottom: transparent; }
 
 .methods_payment_content_item {
-  font-size: 22px;
-  line-height: 1.23;
-  font-weight: 700;
+  font: 700 22px/26.8px 'Montserrat', sans-serif;
   color: #fff; }
   @media (max-width: 800px) {
     .methods_payment_content_item {
@@ -2116,15 +2067,13 @@ a {
           -ms-flex-align: center;
               align-items: center;
       border-bottom: 1px solid #1D283A;
-      font-size: 15px;
+      font: 700 15px/18.3px 'Montserrat', sans-serif;
       padding: 12px 0; } }
 
 .methods_payment_content_item::before {
   display: none;
   content: attr(data-label);
-  font-size: 12px;
-  line-height: 0;
-  font-weight: 600;
+  font: 600 12px/16px 'Inter', sans-serif;
   color: #A4A6AC; }
   @media (max-width: 800px) {
     .methods_payment_content_item::before {
@@ -2159,12 +2108,10 @@ a {
       padding: 7px 18px; } }
 
 .methods_payment_btn {
+  font: 700 15px/18.3px 'Montserrat', sans-serif;
   display: none;
   max-width: 263px;
   width: 100%;
-  font-size: 18px;
-  line-height: 1.22;
-  font-weight: 700;
   padding: 21px 44px;
   border: transparent; }
   @media (max-width: 800px) {
@@ -2197,19 +2144,16 @@ a {
       display: none; } }
 
 .top_casino_title {
+  font: 700 36px/46px 'Montserrat', sans-serif;
   max-width: 590px;
   width: 100%;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.28;
   color: #fff;
   margin: 0 auto 65px; }
   @media (max-width: 576px) {
     .top_casino_title {
       text-align: left;
-      font-size: 24px;
+      font: 700 24px/31px 'Montserrat', sans-serif;
       margin-bottom: 25px; } }
 
 .top_casino_list {
@@ -2224,17 +2168,10 @@ a {
       gap: 16px; } }
 
 .top_casino_item {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.23;
   color: #fff;
   background-color: #151F31;
   border-radius: 12px;
   overflow: hidden; }
-  @media (max-width: 576px) {
-    .top_casino_item {
-      font-size: 15px; } }
 
 @media (max-width: 800px) {
   .top_casino_item:nth-child(1) {
@@ -2296,7 +2233,6 @@ a {
   @media (max-width: 576px) {
     .top_casino_item_title {
       max-width: 114px;
-      font-size: 15px;
       margin: 0;
       padding: 8px; } }
 
@@ -2309,10 +2245,12 @@ a {
       height: 18px; } }
 
 .top_casino_text {
+  font: 700 18px/22px 'Montserrat', sans-serif;
   margin: 5px 0 0 7px;
   color: #FF9736; }
   @media (max-width: 576px) {
     .top_casino_text {
+      font: 700 15px/18.3px 'Montserrat', sans-serif;
       margin: 3px 0 0 7px; } }
 
 .top_casino_item_img_wrap {
@@ -2331,24 +2269,22 @@ a {
 .top_casino_box {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 20px; }
   @media (max-width: 576px) {
     .top_casino_box {
       text-align: left; } }
 
 .top_casino_offer_name {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
+  font: 400 14px/21px 'Inter', sans-serif;
   color: #D8D5DE;
   margin-bottom: 2px; }
 
-@media (max-width: 576px) {
-  .top_casino_offer_text {
-    font-size: 18px; } }
+.top_casino_offer_text {
+  font: 700 18px/22px 'Montserrat', sans-serif; }
 
 .top_casino_price {
+  font: 700 18px/22px 'Montserrat', sans-serif;
   max-width: 250px;
   width: 100%;
   padding: 17px;
@@ -2358,18 +2294,361 @@ a {
   border-radius: 16px; }
   @media (max-width: 576px) {
     .top_casino_price {
+      font: 700 15px/18.3px 'Montserrat', sans-serif;
       position: absolute;
       top: 18px;
       right: 18px;
       max-width: 136px; } }
 
 .top_casino_link {
+  font: 700 18px/22px 'Montserrat', sans-serif;
   display: block;
   border-radius: 0;
   padding: 21px; }
   @media (max-width: 576px) {
     .top_casino_link {
+      font: 700 15px/18.3px 'Montserrat', sans-serif;
       padding: 16px; } }
+
+.criteria_section {
+  padding: 60px 0 30px; }
+  @media (max-width: 800px) {
+    .criteria_section {
+      padding: 30px 0 35px; } }
+
+.criteria_section_title {
+  font: 700 36px/46px 'Montserrat', sans-serif;
+  margin-bottom: 34px;
+  color: #fff; }
+  @media (max-width: 800px) {
+    .criteria_section_title {
+      margin-bottom: 20px; } }
+  @media (max-width: 576px) {
+    .criteria_section_title {
+      font: 700 24px/31px 'Montserrat', sans-serif;
+      margin-bottom: 12px; } }
+
+.criteria_section_box_wrap {
+  display: grid;
+  grid-template-columns: minmax(368px, 568px) minmax(252px, 352px);
+  gap: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 800px) {
+    .criteria_section_box_wrap {
+      gap: 0;
+      grid-template-columns: 1fr; } }
+
+.criteria_section_nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 0 0 20px -14px; }
+  @media (max-width: 800px) {
+    .criteria_section_nav {
+      display: none; } }
+
+.criteria_section_nav_item {
+  position: relative;
+  padding-right: 18px;
+  margin: 0 0 10px 14px; }
+
+.criteria_section_nav_item::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #77B9FF; }
+
+.criteria_section_nav_link {
+  font: 500 15px/18.3px 'Montserrat', sans-serif;
+  color: #FAF7FF;
+  text-decoration: underline; }
+
+.criteria_section_text {
+  font: 400 18px/27.5px 'Inter', sans-serif;
+  margin-bottom: 28px; }
+  @media (max-width: 576px) {
+    .criteria_section_text {
+      font: 400 15px/23.5px 'Inter', sans-serif;
+      margin-bottom: 20px; } }
+
+.criteria_section_rev {
+  position: relative;
+  padding: 68px 26px 33px;
+  border-radius: 12px;
+  background-color: rgba(119, 185, 255, 0.1); }
+  @media (max-width: 800px) {
+    .criteria_section_rev {
+      margin-bottom: 20px; } }
+  @media (max-width: 576px) {
+    .criteria_section_rev {
+      padding: 42px 26px 30px; } }
+
+.criteria_section_rev::before {
+  position: absolute;
+  left: 26px;
+  top: 31px;
+  content: '';
+  background-image: url("../img/review/quotes.svg");
+  width: 55px;
+  height: 45px;
+  z-index: 0;
+  background-size: cover; }
+  @media (max-width: 576px) {
+    .criteria_section_rev::before {
+      left: 23px;
+      top: 23px;
+      width: 33px;
+      height: 27px; } }
+
+.criteria_section_rev_text {
+  position: relative;
+  z-index: 1;
+  font: 500 18px/27.5px 'Inter', sans-serif;
+  font-style: italic; }
+  @media (max-width: 576px) {
+    .criteria_section_rev_text {
+      font: 500 13px/20.5px 'Inter', sans-serif; } }
+
+.criteria_section_note {
+  padding: 24px 0 40px;
+  border-top: 1px solid #1D283A;
+  font: 600 18px/27.5px 'Inter', sans-serif;
+  color: #FAF7FF; }
+  @media (max-width: 800px) {
+    .criteria_section_note {
+      display: none; } }
+
+.criteria_section_list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 45px; }
+  @media (max-width: 800px) {
+    .criteria_section_list {
+      grid-template-columns: 1fr;
+      margin-bottom: 18px; } }
+  @media (max-width: 576px) {
+    .criteria_section_list {
+      margin-bottom: 0; } }
+
+@media (max-width: 576px) {
+  .criteria_section_item {
+    border-left: none;
+    border-bottom: 1px solid #1D283A;
+    padding: 0 0 20px 0; } }
+
+.criteria_section_item:nth-child(2) {
+  border-bottom: transparent; }
+
+.criteria_section_item:nth-child(even) {
+  padding-left: 30px;
+  border-left: 1px solid #1D283A; }
+  @media (max-width: 800px) {
+    .criteria_section_item:nth-child(even) {
+      border-left: none;
+      padding: 0; } }
+  @media (max-width: 576px) {
+    .criteria_section_item:nth-child(even) {
+      padding: 0 0 20px 0; } }
+
+.criteria_section_item_title {
+  position: relative;
+  font: 700 22px/26.8px 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+  padding-left: 42px;
+  color: #FAF7FF; }
+  @media (max-width: 576px) {
+    .criteria_section_item_title {
+      font: 700 18px/22px 'Montserrat', sans-serif;
+      padding-left: 30px; } }
+
+.criteria_section_item_title::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: '';
+  background-image: url("../img/criteria_section/check.svg");
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: cover; }
+  @media (max-width: 576px) {
+    .criteria_section_item_title::before {
+      width: 18px;
+      height: 18px; } }
+
+.criteria_section_item_text {
+  font: 400 16px/27px 'Inter', sans-serif; }
+  @media (max-width: 576px) {
+    .criteria_section_item_text {
+      font: 400 15px/23.5px 'Inter', sans-serif; } }
+
+.criteria_section_item_drop {
+  display: none;
+  grid-column: 1/-1; }
+
+.criteria_section_list_drop .criteria_section_item:last-child {
+  max-width: 760px;
+  width: 100%;
+  grid-column: 1/-1;
+  padding: 0;
+  border: transparent; }
+
+.criteria_section_btn {
+  font: 700 18px/22px 'Montserrat', sans-serif;
+  max-width: 260px;
+  width: 100%;
+  padding: 21px;
+  border: transparent;
+  color: #fff;
+  cursor: pointer; }
+  @media (max-width: 576px) {
+    .criteria_section_btn {
+      max-width: 100%;
+      padding: 19px;
+      font: 700 15px/18.3px 'Montserrat', sans-serif; } }
+
+.bonus_section {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0 40px;
+  background-color: #151F31;
+  border-radius: 36px 36px 0px 0px; }
+  @media (max-width: 576px) {
+    .bonus_section {
+      padding: 43px 0 17px; } }
+
+.bonus_section_img_wrap {
+  position: absolute;
+  top: -150px;
+  right: 0;
+  z-index: -1; }
+  @media (max-width: 1200px) {
+    .bonus_section_img_wrap {
+      top: 0;
+      right: -50px; } }
+  @media (max-width: 991px) {
+    .bonus_section_img_wrap {
+      display: none; } }
+
+.bonus_section_img_wrap img {
+  max-width: 800px;
+  width: 100%;
+  max-height: 1200px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  @media (max-width: 1200px) {
+    .bonus_section_img_wrap img {
+      max-height: 900px; } }
+
+.bonus_section_title_wrap {
+  max-width: 640px;
+  width: 100%; }
+  @media (max-width: 991px) {
+    .bonus_section_title_wrap {
+      max-width: 100%; } }
+
+.bonus_section_title {
+  text-align: left;
+  margin-bottom: 12px; }
+
+.bonus_section_title::before {
+  margin: 0; }
+
+.bonus_section_text {
+  font: 400 18px/27.5px 'Inter', sans-serif;
+  margin-bottom: 25px; }
+  @media (max-width: 576px) {
+    .bonus_section_text {
+      font: 400 15px/23.5px 'Inter', sans-serif;
+      margin-bottom: 13px; } }
+
+.tabs {
+  max-width: 627px;
+  width: 100%;
+  margin-bottom: 30px; }
+  @media (max-width: 991px) {
+    .tabs {
+      max-width: 100%; } }
+  @media (max-width: 576px) {
+    .tabs {
+      margin-bottom: 0; } }
+
+@media (max-width: 768px) {
+  .tabs_nav_wrap {
+    margin: 0 -15px;
+    overflow-x: scroll; } }
+
+.tabs_nav {
+  max-width: 627px;
+  width: 100%;
+  background-color: #0B1423;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 4px 4px 0;
+  margin-bottom: 25px;
+  border-radius: 16px; }
+  @media (max-width: 768px) {
+    .tabs_nav {
+      min-width: 565px; } }
+  @media (max-width: 576px) {
+    .tabs_nav {
+      margin-bottom: 13px; } }
+
+.tabs_nav_item {
+  font: 600 14px/16px 'Inter', sans-serif;
+  color: #A4A6AC;
+  padding: 19px 16px;
+  border-radius: 16px;
+  background-color: transparent;
+  margin-bottom: 4px;
+  cursor: pointer; }
+  @media (max-width: 576px) {
+    .tabs_nav_item {
+      padding: 16px;
+      font: 600 12px/16px 'Inter', sans-serif; } }
+
+.tabs_nav_item:last-child {
+  margin-right: 0; }
+
+.tabs_nav_item.active {
+  color: #D8D5DE;
+  background-color: #1D283A; }
+
+.tabs_content {
+  display: none; }
+
+.tabs_content.active {
+  display: block; }
+
+.tabs_text {
+  font: 400 16px/27px 'Inter', sans-serif; }
+  @media (max-width: 576px) {
+    .tabs_text {
+      font: 400 15px/23.5px 'Inter', sans-serif; } }
 
 .footer {
   padding: 58px 0 20px; }

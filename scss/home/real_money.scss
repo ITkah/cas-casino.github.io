@@ -1,5 +1,4 @@
 .real_money_inner {
-    font-family: 'Montserrat', sans-serif;
     position: relative;
     padding: 44px 67px 62px;
     background: linear-gradient(98.03deg, #EF6451 0.58%, #B50057 70.54%);
@@ -18,14 +17,13 @@
 }
 
 .real_money_title {
-    font-size: 36px;
-    line-height: 1.28;
+    font: 700 36px/46px 'Montserrat', sans-serif;
     max-width: 540px;
     width: 100%;
     margin-bottom: 30px;
 
     @media(max-width:576px) {
-        font-size: 24px;
+        font: 700 24px/31px 'Montserrat', sans-serif;
         margin-bottom: 10px;
     }
 }
@@ -43,12 +41,10 @@
 }
 
 .real_money_text {
-    font-size: 18px;
-    line-height: 1.5;
+    font: 500 18px/27.5px 'Montserrat', sans-serif;
 
     @media(max-width:576px) {
-        font-size: 14px;
-        line-height: 1.65;
+        font: 500 14px/23px 'Montserrat', sans-serif;
     }
 }
 
@@ -73,16 +69,14 @@
 }
 
 .real_money_item_text {
+    font: 700 18px/22px 'Montserrat', sans-serif;
     color: transparent;
     background-clip: text;
     background-image: linear-gradient(0, #FF4646 100%, #C2206E 100%);
     padding: 19px 15px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.22;
 
     @media(max-width:576px) {
-        font-size: 15px;
+        font: 700 15px/18.3px 'Montserrat', sans-serif;
         padding: 12px 15px;
     }
 }
@@ -98,9 +92,7 @@
 }
 
 .real_money_box_text {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    line-height: 1.38;
+    font: 600 16px/22.5px 'Inter', sans-serif;
 }
 
 .real_money_img_wrap {

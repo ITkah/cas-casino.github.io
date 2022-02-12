@@ -62,14 +62,12 @@
 }
 
 .review_name {
-    font-size: 22px;
-    line-height: 1.23;
-    font-weight: 700;
+    font: 700 22px/27.5px 'Inter', sans-serif;
     font-style: italic;
     color: #FAF7FF;
 
     @media(max-width:576px) {
-        font-size: 16px;
+        font: 700 16px/27.5px 'Inter', sans-serif;
     }
 }
 
@@ -103,15 +101,13 @@
 }
 
 .review_rev_text {
+    font: 500 18px/27.5px 'Inter', sans-serif;
+    font-style: italic;
     position: relative;
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 500;
     margin-top: 35px;
 
     @media(max-width:576px) {
-        font-size: 14px;
-        line-height: 1.75;
+        font: 500 14px/24.5px 'Inter', sans-serif;
         margin-top: 25px;
     }
 }
@@ -131,26 +127,21 @@
 }
 
 .review_rаting_mесhаnism_title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 26px;
-    line-height: 1.35;
-    font-weight: 700;
+    font: 700 26px/35.5px 'Montserrat', sans-serif;
     margin-bottom: 12px;
     color: #fff;
 
     @media(max-width:576px) {
-        font-size: 20px;
+        font: 700 20px/28px 'Montserrat', sans-serif;
         margin-bottom: 20px;
     }
 }
 
 .review_rаting_mесhаnism_text {
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 400;
+    font: 400 18px/27.5px 'Inter', sans-serif;
 
     @media(max-width:576px) {
-        font-size: 15px;
+        font: 400 15px/23.5px 'Inter', sans-serif;
     }
 }
 
@@ -164,26 +155,21 @@
 }
 
 .review_our_rating_title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.28;
+    font: 700 36px/46px 'Montserrat', sans-serif;
     color: #fff;
     margin-bottom: 23px;
 
     @media(max-width:576px) {
-        font-size: 24px;
+        font: 700 24px/31px 'Montserrat', sans-serif;
         margin-bottom: 10px;
     }
 }
 
 .review_оur_rаting_text {
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 400;
+    font: 400 18px/27.5px 'Inter', sans-serif;
 
     @media(max-width:576px) {
-        font-size: 15px;
+        font: 400 15px/23.5px 'Inter', sans-serif;
     }
 }
 
@@ -199,21 +185,23 @@
         margin: 0 auto;
         order: 3;
     }
+
     @media(max-width:576px) {
         max-width: 100%;
     }
 }
 
 .review_оur_link {
+    font: 700 18px/22px 'Montserrat', sans-serif;
     display: block;
     max-width: 263px;
     padding: 21px 49px;
     margin-top: 33px;
-    font: 700 18px 'Montserrat', sans-serif;
+
     @media(max-width:576px) {
         text-align: center;
         max-width: 100%;
-        font-size: 15px;
         margin-top: 25px;
+        font: 700 15px/18.3px 'Montserrat', sans-serif;
     }
 }

@@ -15,6 +15,7 @@
     padding: 5px 13px;
     max-width: fit-content;
     margin: 0 auto 15px;
+    font: 600 16px/22.5px 'Inter', sans-serif;
 
     @media(max-width:576px) {
         margin: 0 0 10px;
@@ -29,28 +30,25 @@
 }
 
 .best_games_title {
-    font-family: 'Montserrat', sans-serif;
+    font: 700 36px/46px 'Montserrat', sans-serif;
     max-width: 590px;
     width: 100%;
-    font-size: 36px;
-    line-height: 1.28;
     color: #fff;
     margin: 0 auto 10px;
 
     @media(max-width:576px) {
-        font-size: 24px;
+        font: 700 24px/31px 'Montserrat', sans-serif;
     }
 }
 
 .best_games_text {
+    font: 400 18px/31px 'Inter', sans-serif;
     max-width: 795px;
     width: 100%;
-    font-size: 18px;
-    line-height: 1.53;
     margin: 0 auto 50px;
 
     @media(max-width:576px) {
-        font-size: 15px;
+        font: 400 15px/24px 'Inter', sans-serif;
         margin-bottom: 30px;
     }
 }
@@ -93,12 +91,10 @@
 }
 
 .best_games_name {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1.2;
+    font: 700 22px/27px 'Montserrat', sans-serif;
     color: #fff;
+
     @media(max-width:576px) {
-        font-size: 18px;
+        font: 700 18px/22px 'Montserrat', sans-serif;
     }
 }

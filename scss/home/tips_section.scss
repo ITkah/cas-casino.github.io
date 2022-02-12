@@ -20,6 +20,7 @@
     padding: 5px 13px;
     max-width: fit-content;
     margin: 0 auto 15px;
+    font: 600 16px/22.5px 'Inter', sans-serif;
 
     @media(max-width:576px) {
         margin: 0 0 10px;
@@ -34,26 +35,22 @@
 }
 
 .tips_section_title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.28;
+    font: 700 36px/46px 'Montserrat', sans-serif;
     color: #fff;
     max-width: 790px;
     width: 100%;
     margin: 0 auto 20px;
 
     @media(max-width:576px) {
-        font-size: 24px;
+        font: 700 24px/31px 'Montserrat', sans-serif;
         margin: 0 0 10px;
     }
 }
 
 .tips_section_text {
+    font: 400 18px/27.5px 'Inter', sans-serif;
     max-width: 570px;
     width: 100%;
-    font-size: 18px;
-    line-height: 1.53;
     margin: 0 auto 70px;
 
     @media(max-width:991px) {
@@ -61,7 +58,7 @@
     }
 
     @media(max-width:576px) {
-        font-size: 15px;
+        font: 400 15px/23.5px 'Inter', sans-serif;
         margin: 0 0 25px;
     }
 }
@@ -144,19 +141,16 @@
 }
 
 .tips_section_item_title {
+    font: 700 22px/26.8px 'Montserrat', sans-serif;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1.2;
     padding-left: 51px;
     margin-bottom: 10px;
     color: #fff;
 
     @media(max-width:576px) {
+        font: 700 18px/22px 'Montserrat', sans-serif;
         padding-left: 0;
         max-width: 170px;
-        font-size: 18px;
         margin-bottom: 15px;
     }
 }
@@ -182,10 +176,9 @@
 }
 
 .tips_section_item_text {
-    font-size: 14px;
-    line-height: 1.5;
+    font: 400 14px/21px 'Inter', sans-serif;
 
     @media(max-width:576px) {
-        font-size: 12px;
+        font: 400 12px/19.5px 'Inter', sans-serif;
     }
 }

@@ -17,10 +17,6 @@ body {
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.7;
     color: #D8D5DE;
 }
 
@@ -90,15 +86,12 @@ a {
 
 .title_text {
     position: relative;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    line-height: 1.28;
-    font-weight: 700;
+    font: 700 36px/46px 'Montserrat', sans-serif;
     text-align: center;
     color: #fff;
 
     @media(max-width: 576px) {
-        font-size: 24px;
+        font: 700 24px/31px 'Montserrat', sans-serif;
         text-align: left;
     }
 }
@@ -136,4 +129,12 @@ a {
 .btn:active {
     background: linear-gradient(94.61deg, #FF644F 0.35%, #FF228C 103.27%);
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.btn.disabled {
+    background: #1D283A;
+}
+
+.btn.disabled:hover {
+    background: #1D283A;
+    box-shadow: 0px 4px 17px transparent;
 }

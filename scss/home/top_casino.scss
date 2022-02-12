@@ -24,19 +24,16 @@
 }
 
 .top_casino_title {
+    font: 700 36px/46px 'Montserrat', sans-serif;
     max-width: 590px;
     width: 100%;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.28;
     color: #fff;
     margin: 0 auto 65px;
 
     @media(max-width:576px) {
         text-align: left;
-        font-size: 24px;
+        font: 700 24px/31px 'Montserrat', sans-serif;
         margin-bottom: 25px;
     }
 }
@@ -55,19 +52,12 @@
 }
 
 .top_casino_item {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.23;
     color: #fff;
     background-color: #151F31;
     border-radius: 12px;
     overflow: hidden;
-
-    @media(max-width:576px) {
-        font-size: 15px;
-    }
 }
+
 .top_casino_item:nth-child(1) {
     @media(max-width:800px) {
         order: 2;
@@ -90,6 +80,7 @@
     border-radius: 12px 12px 0 0;
 
 }
+
 .top_casino_item:nth-child(3) {
     @media(max-width:800px) {
         order: 3;
@@ -118,7 +109,6 @@
 
     @media(max-width:576px) {
         max-width: 114px;
-        font-size: 15px;
         margin: 0;
         padding: 8px;
     }
@@ -135,10 +125,12 @@
 }
 
 .top_casino_text {
+    font: 700 18px/22px 'Montserrat', sans-serif;
     margin: 5px 0 0 7px;
     color: #FF9736;
 
     @media(max-width:576px) {
+        font: 700 15px/18.3px 'Montserrat', sans-serif;
         margin: 3px 0 0 7px;
     }
 }
@@ -161,6 +153,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
+    margin-bottom: 20px;
 
     @media(max-width:576px) {
         text-align: left;
@@ -168,21 +161,17 @@
 }
 
 .top_casino_offer_name {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
+    font: 400 14px/21px 'Inter', sans-serif;
     color: #D8D5DE;
     margin-bottom: 2px;
 }
 
 .top_casino_offer_text {
-    @media(max-width:576px) {
-        font-size: 18px;
-    }
+    font: 700 18px/22px 'Montserrat', sans-serif;
 }
 
 .top_casino_price {
+    font: 700 18px/22px 'Montserrat', sans-serif;
     max-width: 250px;
     width: 100%;
     padding: 17px;
@@ -192,6 +181,7 @@
     border-radius: 16px;
 
     @media(max-width:576px) {
+        font: 700 15px/18.3px 'Montserrat', sans-serif;
         position: absolute;
         top: 18px;
         right: 18px;
@@ -200,11 +190,13 @@
 }
 
 .top_casino_link {
+    font: 700 18px/22px 'Montserrat', sans-serif;
     display: block;
     border-radius: 0;
     padding: 21px;
 
     @media(max-width:576px) {
+        font: 700 15px/18.3px 'Montserrat', sans-serif;
         padding: 16px;
     }
 }

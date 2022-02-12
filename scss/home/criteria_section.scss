@@ -1,0 +1,245 @@
+.criteria_section {
+    padding: 60px 0 30px;
+
+    @media(max-width:800px) {
+        padding: 30px 0 35px;
+    }
+}
+
+.criteria_section_title {
+    font: 700 36px/46px 'Montserrat', sans-serif;
+    margin-bottom: 34px;
+    color: #fff;
+
+    @media(max-width:800px) {
+        margin-bottom: 20px;
+    }
+
+    @media(max-width:576px) {
+        font: 700 24px/31px 'Montserrat', sans-serif;
+        margin-bottom: 12px;
+    }
+}
+
+.criteria_section_box_wrap {
+    display: grid;
+    grid-template-columns: minmax(368px, 568px) minmax(252px, 352px);
+    gap: 40px;
+    align-items: center;
+
+    @media(max-width:800px) {
+        gap: 0;
+        grid-template-columns: 1fr;
+    }
+}
+
+.criteria_section_nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 20px -14px;
+
+    @media(max-width:800px) {
+        display: none;
+    }
+}
+
+.criteria_section_nav_item {
+    position: relative;
+    padding-right: 18px;
+    margin: 0 0 10px 14px;
+}
+
+.criteria_section_nav_item::after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #77B9FF;
+}
+
+.criteria_section_nav_link {
+    font: 500 15px/18.3px 'Montserrat', sans-serif;
+    color: #FAF7FF;
+    text-decoration: underline;
+}
+
+.criteria_section_text {
+    font: 400 18px/27.5px 'Inter', sans-serif;
+    margin-bottom: 28px;
+
+    @media(max-width:576px) {
+        font: 400 15px/23.5px 'Inter', sans-serif;
+        margin-bottom: 20px;
+    }
+}
+
+.criteria_section_rev {
+    position: relative;
+    padding: 68px 26px 33px;
+    border-radius: 12px;
+    background-color: rgba(119, 185, 255, 0.1);
+
+    @media(max-width:800px) {
+        margin-bottom: 20px;
+    }
+
+    @media(max-width:576px) {
+        padding: 42px 26px 30px;
+    }
+}
+
+.criteria_section_rev::before {
+    position: absolute;
+    left: 26px;
+    top: 31px;
+    content: '';
+    background-image: url('../img/review/quotes.svg');
+    width: 55px;
+    height: 45px;
+    z-index: 0;
+    background-size: cover;
+
+    @media(max-width:576px) {
+        left: 23px;
+        top: 23px;
+        width: 33px;
+        height: 27px;
+    }
+}
+
+.criteria_section_rev_text {
+    position: relative;
+    z-index: 1;
+    font: 500 18px/27.5px 'Inter', sans-serif;
+    font-style: italic;
+
+    @media(max-width:576px) {
+        font: 500 13px/20.5px 'Inter', sans-serif;
+    }
+}
+
+.criteria_section_note {
+    padding: 24px 0 40px;
+    border-top: 1px solid #1D283A;
+    font: 600 18px/27.5px 'Inter', sans-serif;
+    color: #FAF7FF;
+
+    @media(max-width:800px) {
+        display: none;
+    }
+}
+
+.criteria_section_list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 45px;
+
+    @media(max-width:800px) {
+        grid-template-columns: 1fr;
+        margin-bottom: 18px;
+    }
+
+    @media(max-width:576px) {
+        margin-bottom: 0;
+    }
+}
+
+.criteria_section_item {
+    @media(max-width:576px) {
+        border-left: none;
+        border-bottom: 1px solid #1D283A;
+        padding: 0 0 20px 0;
+    }
+}
+
+.criteria_section_item:nth-child(2) {
+    border-bottom: transparent;
+}
+
+.criteria_section_item:nth-child(even) {
+    padding-left: 30px;
+    border-left: 1px solid #1D283A;
+
+    @media(max-width:800px) {
+        border-left: none;
+        padding: 0;
+    }
+
+    @media(max-width:576px) {
+        padding: 0 0 20px 0;
+    }
+}
+
+.criteria_section_item_title {
+    position: relative;
+    font: 700 22px/26.8px 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+    padding-left: 42px;
+    color: #FAF7FF;
+
+    @media(max-width:576px) {
+        font: 700 18px/22px 'Montserrat', sans-serif;
+        padding-left: 30px;
+    }
+}
+
+.criteria_section_item_title::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    background-image: url('../img/criteria_section/check.svg');
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-size: cover;
+
+    @media(max-width:576px) {
+        width: 18px;
+        height: 18px;
+
+    }
+}
+
+.criteria_section_item_text {
+    font: 400 16px/27px 'Inter', sans-serif;
+
+    @media(max-width:576px) {
+        font: 400 15px/23.5px 'Inter', sans-serif;
+    }
+}
+
+.criteria_section_item_drop {
+    display: none;
+    grid-column: 1/-1;
+}
+
+.criteria_section_list_drop .criteria_section_item:last-child {
+    max-width: 760px;
+    width: 100%;
+    grid-column: 1/-1;
+    padding: 0;
+    border: transparent;
+}
+
+.criteria_section_btn {
+    font: 700 18px/22px 'Montserrat', sans-serif;
+    max-width: 260px;
+    width: 100%;
+    padding: 21px;
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+
+    @media(max-width:576px) {
+        max-width: 100%;
+        padding: 19px;
+        font: 700 15px/18.3px 'Montserrat', sans-serif;
+    }
+}
