@@ -1,0 +1,385 @@
+.casino {
+    margin-bottom: 30px;
+    &_panel_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        @media (max-width: 990px) {
+            margin-bottom: 15px;
+        }
+    }
+    &_panel_change {
+        display: flex;
+        align-items: center;
+        border-radius: 16px;
+        background: #151F31;
+        padding: 5px;
+        @media (max-width: 576px) {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            box-sizing: border-box;
+            align-items: center;
+        }
+    }
+    &_panel_change_item {
+        color: #D8D5DE;
+        padding: 20px 15px;
+        font: 600 14px 'Inter', sans-serif;
+        display: flex;
+        border-radius: 16px;
+        align-items: center;
+        transition: .3s;
+        &:hover {
+            background: #1D283A;
+        }
+        @media (max-width: 576px) {
+            padding: 10px 7px;
+            margin-right: 5px;
+            justify-content: center;
+            font: 600 12px 'Inter', sans-serif;
+        }
+        img {
+            margin-right: 5px;
+        }
+    }
+    &_panel_change_item:last-child {
+        margin: 0;
+    }
+    .active {
+        background: #1D283A;
+    }
+    &_disclaimer {
+        position: relative;
+        background: #151F31;
+        cursor: pointer;
+        border-radius: 16px;
+        padding: 30px 35px;
+        @media (max-width: 990px) {
+            display: none;
+        }
+        &:hover {
+            .casino_disclaimer_hide {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+    }
+    &_disclaimer_text {
+        color: #FFF;
+        text-align: center;
+        font: 700 16px 'Montserrat', sans-serif;
+    }
+    &_disclaimer_hide {
+        position: absolute;
+        padding: 20px;
+        opacity: 0;
+        pointer-events: none;
+        top: 120%;
+        width: 320px;
+        box-sizing: border-box;
+        transition: .3s;
+        background: #1D283A;
+        box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.25);
+        border-radius: 6px;
+        color: #A4A6AC;
+        right: 0;
+        font: 600 14px/16px 'Inter', sans-serif;
+        &::before {
+            content: ''; 
+            position: absolute;
+            top: -40px;
+            left: 180px;
+            border: 33px solid transparent; 
+            border-bottom: 20px solid #1D283A;
+        }
+        &::after {
+            content: '';
+            height: 20px;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: -20px;
+        }
+        a {
+            color: #77b9ff;
+        }
+    }
+}
+
+
+.casino_output_wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-bottom: 25px;
+}
+
+.casino_ouput_item {
+    padding: 25px 35px;
+    background: #151F31;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-gap: 40px;
+    align-items: center;
+    @media (max-width: 1200px) {
+        padding: 20px;
+        grid-gap: 20px;
+    }
+    @media (max-width: 990px) {
+        max-width: 700px;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+    @media (max-width: 576px) {
+        padding: 15px;
+    }
+}
+
+.casino_output_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 990px) {
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        grid-gap: 20px;
+    }
+    .casino_img {
+        object-fit: cover;
+        max-width: 100%;
+        @media (max-width: 990px) {
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+
+.output_info_top {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #1D283A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media(max-width: 990px) {
+        display: none;
+    }
+}
+
+
+.output_title {
+    color: #FAF7FF;
+    margin-bottom: 8px;
+    font: 700 22px 'Montserrat', sans-serif;
+    @media (max-width: 990px) {
+        margin-bottom: 5px;
+        font: 700 18px 'Montserrat', sans-serif;
+    }
+}
+
+
+.output_info_star {
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 5px;
+        @media (max-width: 990px) {
+            height: 18px;
+            width: 18px;
+        }
+    }
+    span {
+        color: #D8D5DE;
+        position: relative;
+        top: 2px;
+        font: 600 16px 'Inter', sans-serif;
+        @media (max-width: 990px) {
+            font: 600 14px 'Inter', sans-serif;
+        }
+    }
+}
+
+.ouput_checkbox_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 540px;
+    align-items: center;
+    
+    .output_checkbox_item  {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        img {
+            margin-right: 15px;
+        }
+        .checkbox_item_text {
+            font: 400 14px/21px 'Inter', sans-serif;
+            box-sizing: border-box;
+        }
+    }
+}
+
+.output_info_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 15px;
+    }
+    .output_info_price {
+        color: #fff;
+        max-width: 190px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px 25px;
+        text-align: center;
+        background: #1D283A;
+        border: 1px solid #1D283A;
+        border-radius: 16px;
+        font: 700 18px 'Montserrat', sans-serif;
+        @media (max-width: 990px) {
+            max-width: 100%;
+            padding: 15px 20px;
+            font: 700 15px 'Montserrat', sans-serif;
+        }
+    }
+    .output_info_games {
+        .info_games_title {
+            margin-bottom: 3px;
+            color: #A4A6AC;
+            font: 600 14px 'Inter', sans-serif;
+        }
+        .info_games_text {
+            color: #FAF7FF;
+            font: 700 22px 'Montserrat', sans-serif;
+            @media (max-width: 576px) {
+                font: 700 20px 'Montserrat', sans-serif;
+            }
+        }
+    }
+    .output_review_btn_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        @media (max-width: 990px) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+    .output_review_btn {
+        display: flex;
+        padding: 20px 30px;
+        text-align: center;
+        align-items: center;
+        background: #0B1423;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        color: #fff;
+        font: 600 16px 'Montserrat', sans-serif;
+        transition: .3s;
+        @media (max-width: 990px) {
+            padding: 20px 25px;
+            font: 600 15px 'Montserrat', sans-serif;
+            justify-content: center;
+        }
+        @media (max-width: 360px) {
+            padding: 20px 10px;
+            font: 600 13px 'Montserrat', sans-serif;
+        }
+        .desk {
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+        .mob {
+            display: none;
+            @media (max-width: 990px) {
+                display: block;
+                text-align: center;
+            }
+        }
+        &:hover {
+            background: #25324A;
+        }
+        &:active {
+            border-color: #807E87;
+        }
+        &:focus {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+        img {
+            margin-right: 5px;
+        }
+    }
+    .output_visit_btn {
+        display: flex;
+        padding: 20px 30px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font: 600 16px 'Montserrat', sans-serif;
+        transition: .3s;
+        @media (max-width: 990px) {
+            padding: 20px 10px;
+            font: 600 15px 'Montserrat', sans-serif;
+        }
+        @media (max-width: 360px) {
+            padding: 20px 10px;
+            font: 600 13px 'Montserrat', sans-serif;
+        }
+        img {
+            margin-right: 5px;
+            @media (max-width: 576px) {
+                height: 14px;
+                margin-right: 3px;
+                width: 14px;
+            }
+        }
+    }
+}
+
+.mob_title {
+    display: none;
+    @media (max-width: 990px) {
+        display: block;
+    }
+}
+
+.mob_checkbox {
+    display: none;
+    @media (max-width: 990px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .output_checkbox_item {
+        justify-content: flex-start;
+    }
+ }
+ 
+
+ .casino_load_btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     .btn {
+         padding: 20px 40px;
+         font: 600 18px 'Montserrat', sans-serif;
+         @media (max-width: 576px) {
+             width: 100%;
+             box-sizing: border-box;
+             max-width: 100%;
+         }
+     }
+ }

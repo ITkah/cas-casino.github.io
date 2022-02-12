@@ -161,6 +161,8 @@ a {
       display: block; }
 
 .header_main_wrap {
+  position: relative;
+  z-index: 99;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -192,7 +194,7 @@ a {
       transition: .3s;
       width: 85vw;
       height: 100vh;
-      z-index: 99;
+      z-index: 999;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
       padding: 20px;
@@ -304,6 +306,16 @@ a {
         -webkit-box-shadow: 0 4px 47px rgba(0, 0, 0, 0.25);
                 box-shadow: 0 4px 47px rgba(0, 0, 0, 0.25);
         border-radius: 6px; }
+        .header_main_wrap nav .header_nav li .sub-menu::before {
+          content: '';
+          position: absolute;
+          top: -33px;
+          right: 20px;
+          border: 25px solid transparent;
+          border-bottom: 15px solid #1D283A; }
+          @media (max-width: 990px) {
+            .header_main_wrap nav .header_nav li .sub-menu::before {
+              display: none; } }
         @media (max-width: 990px) {
           .header_main_wrap nav .header_nav li .sub-menu {
             -webkit-transition: none;
@@ -565,6 +577,549 @@ a {
   opacity: 1;
   visibility: visible;
   pointer-events: auto; }
+
+.main_section_wrap {
+  padding: 140px 0; }
+  @media (max-width: 990px) {
+    .main_section_wrap {
+      padding: 30px 0 20px 0; } }
+
+.main_section {
+  position: relative; }
+
+.main_section_img {
+  position: absolute;
+  right: 0;
+  display: block;
+  top: 0; }
+  @media (max-width: 990px) {
+    .main_section_img {
+      position: relative;
+      margin-top: 35px; } }
+  .main_section_img img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.main_section_info {
+  position: relative; }
+
+.main_section {
+  position: relative; }
+  .main_section_pretitle {
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #16253c;
+    border-radius: 74px;
+    max-width: 200px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font: 500 16px 'Inter', sans-serif; }
+    .main_section_pretitle img {
+      margin-right: 6px; }
+  .main_section_title {
+    color: #fff;
+    margin-bottom: 10px;
+    font: 700 40px/51px 'Montserrat', sans-serif; }
+    @media (max-width: 990px) {
+      .main_section_title {
+        font: 700 28px/36px 'Montserrat', sans-serif; } }
+  .main_section_text {
+    color: #D8D5DE;
+    margin-bottom: 55px;
+    max-width: 450px;
+    font: 400 18px/27px 'Inter', sans-serif; }
+    @media (max-width: 990px) {
+      .main_section_text {
+        font: 400 15px/23px 'Montserrat', sans-serif;
+        margin-bottom: 25px; } }
+  .main_section_btn {
+    position: relative;
+    font: 700 18px 'Montserrat', sans-serif;
+    padding: 20px 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 180px;
+    background: -o-linear-gradient(351.97deg, #FF4646 0.58%, #C2206E 70.54%);
+    background: linear-gradient(98.03deg, #FF4646 0.58%, #C2206E 70.54%); }
+    @media (max-width: 990px) {
+      .main_section_btn {
+        font: 700 15px 'Montserrat', sans-serif; } }
+    .main_section_btn img {
+      margin-left: 12px; }
+
+.casino {
+  margin-bottom: 30px; }
+  .casino_panel_top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 25px; }
+    @media (max-width: 990px) {
+      .casino_panel_top {
+        margin-bottom: 15px; } }
+  .casino_panel_change {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 16px;
+    background: #151F31;
+    padding: 5px; }
+    @media (max-width: 576px) {
+      .casino_panel_change {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+  .casino_panel_change_item {
+    color: #D8D5DE;
+    padding: 20px 15px;
+    font: 600 14px 'Inter', sans-serif;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 16px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    .casino_panel_change_item:hover {
+      background: #1D283A; }
+    @media (max-width: 576px) {
+      .casino_panel_change_item {
+        padding: 10px 7px;
+        margin-right: 5px;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font: 600 12px 'Inter', sans-serif; } }
+    .casino_panel_change_item img {
+      margin-right: 5px; }
+  .casino_panel_change_item:last-child {
+    margin: 0; }
+  .casino .active {
+    background: #1D283A; }
+  .casino_disclaimer {
+    position: relative;
+    background: #151F31;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 30px 35px; }
+    @media (max-width: 990px) {
+      .casino_disclaimer {
+        display: none; } }
+    .casino_disclaimer:hover .casino_disclaimer_hide {
+      opacity: 1;
+      pointer-events: auto; }
+  .casino_disclaimer_text {
+    color: #FFF;
+    text-align: center;
+    font: 700 16px 'Montserrat', sans-serif; }
+  .casino_disclaimer_hide {
+    position: absolute;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    top: 120%;
+    width: 320px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    background: #1D283A;
+    -webkit-box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    color: #A4A6AC;
+    right: 0;
+    font: 600 14px/16px 'Inter', sans-serif; }
+    .casino_disclaimer_hide::before {
+      content: '';
+      position: absolute;
+      top: -40px;
+      left: 180px;
+      border: 33px solid transparent;
+      border-bottom: 20px solid #1D283A; }
+    .casino_disclaimer_hide::after {
+      content: '';
+      height: 20px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: -20px; }
+    .casino_disclaimer_hide a {
+      color: #77b9ff; }
+
+.casino_output_wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  margin-bottom: 25px; }
+
+.casino_ouput_item {
+  padding: 25px 35px;
+  background: #151F31;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-gap: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1200px) {
+    .casino_ouput_item {
+      padding: 20px;
+      grid-gap: 20px; } }
+  @media (max-width: 990px) {
+    .casino_ouput_item {
+      max-width: 700px;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin: 0 auto;
+      grid-template-columns: 1fr;
+      grid-gap: 15px; } }
+  @media (max-width: 576px) {
+    .casino_ouput_item {
+      padding: 15px; } }
+
+.casino_output_img {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (max-width: 990px) {
+    .casino_output_img {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      grid-gap: 20px; } }
+  .casino_output_img .casino_img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%; }
+    @media (max-width: 990px) {
+      .casino_output_img .casino_img {
+        height: 80px;
+        width: 80px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        border-radius: 50%; } }
+
+.output_info_top {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #1D283A;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 990px) {
+    .output_info_top {
+      display: none; } }
+
+.output_title {
+  color: #FAF7FF;
+  margin-bottom: 8px;
+  font: 700 22px 'Montserrat', sans-serif; }
+  @media (max-width: 990px) {
+    .output_title {
+      margin-bottom: 5px;
+      font: 700 18px 'Montserrat', sans-serif; } }
+
+.output_info_star {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .output_info_star img {
+    margin-right: 5px; }
+    @media (max-width: 990px) {
+      .output_info_star img {
+        height: 18px;
+        width: 18px; } }
+  .output_info_star span {
+    color: #D8D5DE;
+    position: relative;
+    top: 2px;
+    font: 600 16px 'Inter', sans-serif; }
+    @media (max-width: 990px) {
+      .output_info_star span {
+        font: 600 14px 'Inter', sans-serif; } }
+
+.ouput_checkbox_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  max-width: 540px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .ouput_checkbox_wrap .output_checkbox_item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .ouput_checkbox_wrap .output_checkbox_item img {
+      margin-right: 15px; }
+    .ouput_checkbox_wrap .output_checkbox_item .checkbox_item_text {
+      font: 400 14px/21px 'Inter', sans-serif;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+
+.output_info_bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (max-width: 990px) {
+    .output_info_bottom {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-gap: 15px; } }
+  .output_info_bottom .output_info_price {
+    color: #fff;
+    max-width: 190px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 15px 25px;
+    text-align: center;
+    background: #1D283A;
+    border: 1px solid #1D283A;
+    border-radius: 16px;
+    font: 700 18px 'Montserrat', sans-serif; }
+    @media (max-width: 990px) {
+      .output_info_bottom .output_info_price {
+        max-width: 100%;
+        padding: 15px 20px;
+        font: 700 15px 'Montserrat', sans-serif; } }
+  .output_info_bottom .output_info_games .info_games_title {
+    margin-bottom: 3px;
+    color: #A4A6AC;
+    font: 600 14px 'Inter', sans-serif; }
+  .output_info_bottom .output_info_games .info_games_text {
+    color: #FAF7FF;
+    font: 700 22px 'Montserrat', sans-serif; }
+    @media (max-width: 576px) {
+      .output_info_bottom .output_info_games .info_games_text {
+        font: 700 20px 'Montserrat', sans-serif; } }
+  .output_info_bottom .output_review_btn_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; }
+    @media (max-width: 990px) {
+      .output_info_bottom .output_review_btn_wrap {
+        grid-column-start: 1;
+        grid-column-end: 3; } }
+  .output_info_bottom .output_review_btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 30px;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #0B1423;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    color: #fff;
+    font: 600 16px 'Montserrat', sans-serif;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    @media (max-width: 990px) {
+      .output_info_bottom .output_review_btn {
+        padding: 20px 25px;
+        font: 600 15px 'Montserrat', sans-serif;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
+    @media (max-width: 360px) {
+      .output_info_bottom .output_review_btn {
+        padding: 20px 10px;
+        font: 600 13px 'Montserrat', sans-serif; } }
+    @media (max-width: 990px) {
+      .output_info_bottom .output_review_btn .desk {
+        display: none; } }
+    .output_info_bottom .output_review_btn .mob {
+      display: none; }
+      @media (max-width: 990px) {
+        .output_info_bottom .output_review_btn .mob {
+          display: block;
+          text-align: center; } }
+    .output_info_bottom .output_review_btn:hover {
+      background: #25324A; }
+    .output_info_bottom .output_review_btn:active {
+      border-color: #807E87; }
+    .output_info_bottom .output_review_btn:focus {
+      border-color: rgba(255, 255, 255, 0.2); }
+    .output_info_bottom .output_review_btn img {
+      margin-right: 5px; }
+  .output_info_bottom .output_visit_btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 30px;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font: 600 16px 'Montserrat', sans-serif;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s; }
+    @media (max-width: 990px) {
+      .output_info_bottom .output_visit_btn {
+        padding: 20px 10px;
+        font: 600 15px 'Montserrat', sans-serif; } }
+    @media (max-width: 360px) {
+      .output_info_bottom .output_visit_btn {
+        padding: 20px 10px;
+        font: 600 13px 'Montserrat', sans-serif; } }
+    .output_info_bottom .output_visit_btn img {
+      margin-right: 5px; }
+      @media (max-width: 576px) {
+        .output_info_bottom .output_visit_btn img {
+          height: 14px;
+          margin-right: 3px;
+          width: 14px; } }
+
+.mob_title {
+  display: none; }
+  @media (max-width: 990px) {
+    .mob_title {
+      display: block; } }
+
+.mob_checkbox {
+  display: none; }
+  @media (max-width: 990px) {
+    .mob_checkbox {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px; } }
+  .mob_checkbox .output_checkbox_item {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+
+.casino_load_btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .casino_load_btn .btn {
+    padding: 20px 40px;
+    font: 600 18px 'Montserrat', sans-serif; }
+    @media (max-width: 576px) {
+      .casino_load_btn .btn {
+        width: 100%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        max-width: 100%; } }
 
 .status {
   position: relative;
