@@ -1,3 +1,11 @@
+.real_money {
+    margin-top: 44px;
+
+    @media(max-width:576px) {
+        margin-top: 0;
+    }
+}
+
 .real_money_inner {
     position: relative;
     padding: 44px 67px 62px;
@@ -56,6 +64,7 @@
     width: 100%;
     margin-bottom: 10px;
     z-index: 2;
+
     @media(max-width:991px) {
         max-width: 100%;
     }
