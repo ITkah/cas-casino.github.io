@@ -1,8 +1,10 @@
 .best_games {
+    padding-top: 50px;
     text-align: center;
 
     @media(max-width:576px) {
         text-align: left;
+        padding-top: 45px;
     }
 }
 
