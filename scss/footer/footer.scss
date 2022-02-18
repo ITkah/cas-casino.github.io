@@ -151,11 +151,11 @@
     }
 }
 
-.footer_item {
+.footer_list li {
     margin-bottom: 8px;
 }
 
-.footer_link {
+.footer_list a {
     font-size: 16px;
     line-height: 1.2;
     color: #FAF7FF;
@@ -209,13 +209,13 @@
     padding: 12px 14px;
 }
 
-.footem_gambling {
+.footer_gambling {
     max-width: 136px;
     width: 100%;
     height: 32px;
 }
 
-.footem_gambling img {
+.footer_gambling img {
     width: 100%;
     height: 100%;
 }

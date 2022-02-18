@@ -1,0 +1,46 @@
+<svg width="1440" height="1068" viewBox="0 0 1440 1068" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_652_3522)">
+<path d="M786.605 265.759C1010.1 319.891 1311.89 315.794 1285.4 425.173C1258.91 534.551 1089.21 1066.44 690.668 661.852C327.282 743.385 236.499 796.318 262.991 686.94C80.6229 392.987 563.11 211.627 786.605 265.759Z" fill="url(#paint0_linear_652_3522)" fill-opacity="0.32"/>
+</g>
+<g clip-path="url(#clip0_652_3522)" filter="url(#filter1_f_652_3522)">
+<path d="M1073.09 350.678C1069.88 362.666 1064.76 378.256 1053.35 385.173C1043.34 390.864 1029.06 388.176 1018.71 383.813C997.375 375.199 981.02 355.262 977.575 332.709C977.465 328.814 977.932 337.866 978.194 335.862C978.799 342.279 979.026 348.438 979.631 354.855C980.587 368.062 981.543 381.269 983.132 394.363C986.578 416.916 1000.66 436.93 1021.86 446.546C1032.59 451.169 1046.73 454.859 1057.5 449.686C1070.43 443.806 1075.68 427.214 1078.77 414.595C1079.28 412.22 1078.29 407.176 1077.92 405.284C1077.7 397.493 1077.23 390.074 1076.37 382.395C1075.52 374.716 1074.79 367.668 1074.32 360.248C1074.08 357.355 1072.58 353.053 1073.09 350.678Z" fill="url(#paint1_linear_652_3522)"/>
+</g>
+<path d="M527.217 442.946C526.785 449.979 527.588 459.912 532.45 465.65C537.159 471.134 547.366 468.776 553.734 468.395C560.636 468.037 567.897 467.983 574.228 471.27C580.277 474.38 585.17 481.315 583.21 488.405C582.709 490.445 584.143 485.931 583.893 486.951C584.976 483.864 585.933 480.854 586.889 477.844C588.979 471.543 591.351 465.42 593.033 459.019C594.842 452.541 592.194 446.157 586.752 442.332C580.672 438.025 572.773 437.597 565.539 437.982C558.891 438.186 547.463 441.109 542.601 435.371C537.738 429.633 536.885 419.904 537.367 412.667C537.32 413.737 536.056 416.239 535.728 417.132C534.417 420.704 533.31 424.325 532.126 427.82C531.019 431.442 529.708 435.014 528.601 438.636C528.096 439.809 527.237 441.545 527.217 442.946Z" fill="url(#paint2_linear_652_3522)"/>
+<defs>
+<filter id="filter0_f_652_3522" x="-33.3376" y="0.227356" width="1576.37" height="1067.29" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="128.002" result="effect1_foregroundBlur_652_3522"/>
+</filter>
+<filter id="filter1_f_652_3522" x="925.986" y="288.37" width="197.46" height="190.387" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.88514" result="effect1_foregroundBlur_652_3522"/>
+</filter>
+<linearGradient id="paint0_linear_652_3522" x1="249.952" y1="425.069" x2="1228.05" y2="661.971" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3DE8FF" stop-opacity="0.41"/>
+<stop offset="1" stop-color="#0051EE" stop-opacity="0.29"/>
+</linearGradient>
+<linearGradient id="paint1_linear_652_3522" x1="1082.39" y1="386.297" x2="1003.22" y2="394.108" gradientUnits="userSpaceOnUse">
+<stop offset="0.00540541" stop-color="#8C623E"/>
+<stop offset="0.1505" stop-color="#B28452"/>
+<stop offset="0.4748" stop-color="#EAB671"/>
+<stop offset="0.673" stop-color="#B58653"/>
+<stop offset="0.7991" stop-color="#EAB671"/>
+<stop offset="1" stop-color="#825937"/>
+</linearGradient>
+<linearGradient id="paint2_linear_652_3522" x1="607.784" y1="464.039" x2="513.169" y2="437.473" gradientUnits="userSpaceOnUse">
+<stop offset="0.00540541" stop-color="#8C623E"/>
+<stop offset="0.1018" stop-color="#EAB671"/>
+<stop offset="0.1937" stop-color="#B28452"/>
+<stop offset="0.3405" stop-color="#825937"/>
+<stop offset="0.4748" stop-color="#EAB671"/>
+<stop offset="0.6432" stop-color="#825937"/>
+<stop offset="0.7829" stop-color="#EAB671"/>
+<stop offset="1" stop-color="#825937"/>
+</linearGradient>
+<clipPath id="clip0_652_3522">
+<rect width="108.945" height="136.181" fill="white" transform="translate(1111.68 377.113) rotate(124.418)"/>
+</clipPath>
+</defs>
+</svg>

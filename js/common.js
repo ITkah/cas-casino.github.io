@@ -76,3 +76,60 @@ $('.casino_panel_change_item').on('click', function (e) {
     $(this).addClass('active');
 });
 
+$('.faq_q').on('click', function () {
+    $(this).siblings('.faq_a').slideToggle();
+    $(this).toggleClass('active');
+});
+
+new Swiper('.slider_casino_container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    navigation: {
+        nextEl: '.next',
+        prevEl: '.prev',
+    },
+    slideShadows: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 18,
+        depth: 15,
+        modifier: 9,
+        slideShadows: false,
+    },
+});
+
+new Swiper('.slider_mob_casino_container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    navigation: {
+        nextEl: '.next_mob',
+        prevEl: '.prev_mob',
+    },
+    slideShadows: true,
+    loop: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 18,
+        depth: 15,
+        modifier: 9,
+        slideShadows: false,
+    },
+});
+
+$('.slider_mob_casino_btn').on('click', function () {
+    $(this).toggleClass('disabled');
+    $('.slider_casino_box').slideToggle();
+    if ($(this).attr('data-show') === "true") {
+        $(this).text("Continue reading");
+        $(this).attr('data-show', "false");
+    }
+    else {
+        $(this).text("Hide");
+        $(this).attr('data-show', "true");
+    }
+});

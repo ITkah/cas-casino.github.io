@@ -52,6 +52,11 @@
     background-color: #151F31;
     border-radius: 12px;
     overflow: hidden;
+    transition: box-shadow 0.3s;
+}
+
+.top_casino_item:hover {
+    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.33);
 }
 
 .top_casino_item:nth-child(1) {

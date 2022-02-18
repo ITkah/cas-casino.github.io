@@ -1,0 +1,15 @@
+<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="8" y="8" width="17" height="17" fill="white"/>
+<g clip-path="url(#clip0_571_3525)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M3 4.33333C3 3.59695 3.59695 3 4.33333 3H25.6667C26.403 3 27 3.59695 27 4.33333V23C27 25.2091 25.2091 27 23 27H7C4.79086 27 3 25.2091 3 23V4.33333ZM11.9428 12.7239C11.4221 12.2032 10.5779 12.2032 10.0572 12.7239C9.53649 13.2446 9.53649 14.0888 10.0572 14.6095L14.0572 18.6095C14.5779 19.1302 15.4221 19.1302 15.9428 18.6095L19.9428 14.6095C20.4635 14.0888 20.4635 13.2446 19.9428 12.7239C19.4221 12.2032 18.5779 12.2032 18.0572 12.7239L15 15.781L11.9428 12.7239Z" fill="url(#paint0_linear_571_3525)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_571_3525" x1="3" y1="4.125" x2="21.7851" y2="6.77418" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF4646"/>
+<stop offset="1" stop-color="#C2206E"/>
+</linearGradient>
+<clipPath id="clip0_571_3525">
+<rect width="24" height="24" fill="white" transform="translate(3 3)"/>
+</clipPath>
+</defs>
+</svg>
