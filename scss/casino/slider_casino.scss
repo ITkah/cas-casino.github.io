@@ -1,0 +1,251 @@
+.slider_casino {
+    overflow: hidden;
+}
+
+.slider_casino_inner {
+    padding: 50px 0 120px;
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(350px, 1fr) minmax(330px, 540px);
+    gap: 35px;
+
+    @media(max-width:768px) {
+        display: block;
+        gap: 0;
+    }
+
+    @media(max-width:576px) {
+        padding: 60px 0 40px;
+    }
+}
+
+.slider_casino_title {
+    font: 700 36px/46px 'Montserrat', sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+
+    @media(max-width:576px) {
+        font: 700 24px/31px 'Montserrat', sans-serif;
+    }
+}
+
+.slider_casino_text {
+    font: 400 18px/27.5px 'Inter', sans-serif;
+
+    @media(max-width:576px) {
+        font: 400 15px/23.5px 'Inter', sans-serif;
+    }
+}
+
+.slider_casino_note {
+    background-color: rgba(251, 88, 88, 0.1);
+    border-radius: 12px;
+    padding: 25px 55px 25px 35px;
+    margin-top: 35px;
+
+    @media(max-width:576px) {
+        padding: 19px 14px 24px 21px;
+        margin-top: 15px;
+    }
+}
+
+.slider_casino_note_title {
+    font: 600 18px/22.5px 'Inter', sans-serif;
+    color: #FB5858;
+    margin-bottom: 8px;
+
+    @media(max-width:576px) {
+        font: 600 16px/22.5px 'Inter', sans-serif;
+    }
+}
+
+.slider_casino_note_text {
+    font: 400 16px/22.5px 'Inter', sans-serif;
+    color: #FF9D9D;
+
+    @media(max-width:576px) {
+        font: 400 14px/22.5px 'Inter', sans-serif;
+    }
+}
+
+.slider_casino_container {
+    position: relative;
+}
+
+.slider_casino .swiper-slide {
+    width: 325px !important;
+    opacity: 0.8;
+}
+
+.slider_casino .swiper-slide-active {
+    opacity: 1;
+}
+
+.slider_casino_slider_wrap {
+    position: relative;
+
+    @media(max-width:576px) {
+        margin: 0 -15px;
+    }
+}
+
+.slider_casino .slider_nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    border: transparent;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.slider_casino .slider_nav img {
+    width: 48px;
+    height: 48px;
+}
+
+.slider_casino .prev {
+    left: 22%;
+
+    @media(max-width:576px) {
+        left: 0;
+    }
+}
+
+.slider_casino .next {
+    right: 22%;
+
+    @media(max-width:576px) {
+        right: 0;
+    }
+}
+
+.slider_casino_bg {
+    position: absolute;
+    top: -100px;
+    right: -150px;
+    z-index: 1;
+    display: block;
+    max-width: 800px;
+    background-size: cover;
+
+    @media(max-width:768px) {
+        max-width: 100%;
+        top: -200px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    @media(max-width:375px) {
+        top: -300px;
+    }
+}
+
+.slider_mob_casino {
+    position: relative;
+}
+
+.slider_mob_casino_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @media(max-width:991px) {
+        display: none;
+    }
+}
+
+.slider_mob_casino .slider_casino_inner {
+    @media(max-width:991px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media(max-width:576px) {
+        padding: 0;
+    }
+}
+
+.slider_mob_casino .slider_casino_content {
+    padding-bottom: 40px;
+
+    @media(max-width:991px) {
+        order: 1;
+        padding-bottom: 0;
+    }
+}
+
+.slider_mob_casino .slider_casino_slider_wrap {
+    @media(max-width:991px) {
+        order: 4;
+    }
+}
+
+.slider_casino_box {
+    grid-column: 1/-1;
+    max-width: 840px;
+    width: 100%;
+    margin-top: -40px;
+    order: 2;
+
+    @media(max-width:991px) {
+        margin-top: 20px;
+    }
+
+    @media(max-width:576px) {
+        margin-top: 18px;
+        display: none;
+    }
+}
+
+.slider_casino_box.active {
+    display: block;
+}
+
+.slider_casino_box_title img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.slider_casino_box_title {
+    display: flex;
+    align-items: center;
+    font: 700 26px/35.5px 'Montserrat', sans-serif;
+    color: #fff;
+    margin-bottom: 15px;
+
+    @media(max-width:576px) {
+        font: 700 20px/35.5px 'Montserrat', sans-serif;
+    }
+}
+
+.slider_casino_box_text {
+    font: 400 18px/27.5px 'Inter', sans-serif;
+
+    @media(max-width:576px) {
+        font: 400 15px/23.5px 'Inter', sans-serif;
+    }
+}
+
+.slider_mob_casino_btn {
+    position: relative;
+    z-index: 2;
+    font: 700 15px/18.3px 'Montserrat', sans-serif;
+    padding: 19px;
+    border: transparent;
+    order: 3;
+    display: none;
+    margin: 18px 0 60px;
+
+    @media(max-width:576px) {
+        display: block;
+    }
+}

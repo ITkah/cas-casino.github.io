@@ -70,6 +70,7 @@
 
     @media(max-width:991px) {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
 
@@ -82,6 +83,7 @@
     overflow: hidden;
     text-align: left;
     counter-increment: section;
+    transition: background-color 0.3s;
 
     @media(max-width:576px) {
         padding: 56px 20px 30px;
@@ -104,6 +106,14 @@
     }
 }
 
+.tips_section_item:hover {
+    background-color: #172337;
+}
+
+.tips_section_item:hover .tips_section_item_title {
+    color: #77B9FF;
+}
+
 .tips_section_item:nth-child(2) {
     margin: -30px 0 30px;
 
@@ -113,12 +123,17 @@
 }
 
 .tips_section_item_bg_violet::before {
-    background: rgba(38, 0, 100, 0.65);
+    background-color: rgba(38, 0, 100, 0.65);
     filter: blur(74px);
 }
 
 .tips_section_item_bg_orange::before {
-    background: rgba(255, 210, 0, 0.08);
+    background-color: rgba(255, 210, 0, 0.08);
+    filter: blur(74px);
+}
+
+.tips_section_item_bg_turquoise::before {
+    background-color: #104E5B;
     filter: blur(74px);
 }
 
@@ -146,6 +161,7 @@
     padding-left: 51px;
     margin-bottom: 10px;
     color: #fff;
+    transition: color 0.3s;
 
     @media(max-width:576px) {
         font: 700 18px/22px 'Montserrat', sans-serif;
@@ -181,5 +197,145 @@
 
     @media(max-width:576px) {
         font: 400 12px/19.5px 'Inter', sans-serif;
+    }
+}
+
+.tips_section_item_box {
+    list-style: outside;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.tips_section_inner {
+    position: relative;
+}
+
+.tips_section_item_box_text {
+    font: 600 14px/21px 'Inter', sans-serif;
+}
+
+.casino.tips_section {
+    position: relative;
+
+    @media(max-width:576px) {
+        padding: 0;
+        margin-bottom: 0;
+    }
+}
+
+.casino .tips_section_title {
+    @media(max-width:576px) {
+        text-align: left;
+    }
+}
+
+.casino .tips_section_text {
+    margin: 0 auto 125px;
+
+    @media(max-width:576px) {
+        text-align: left;
+        margin: 0 auto 40px;
+    }
+}
+
+.casino .tips_section_item_title {
+    margin-bottom: 24px;
+
+    @media(max-width:576px) {
+        max-width: 100%;
+        padding: 0 20px 0 51px;
+    }
+}
+
+.casino .tips_section_item:nth-child(2) {
+    margin: -50px 0 110px;
+
+    @media(max-width:991px) {
+        margin: 0;
+    }
+}
+
+.casino .tips_section_item_img {
+    margin-bottom: 34px;
+}
+
+.casino .tips_section_item_img img {
+    max-width: 100%;
+}
+
+.casino .tips_section_item_img {
+    @media(max-width:576px) {
+        max-width: 156px;
+        width: 100%;
+        max-height: 158px;
+        height: 100%;
+        position: static;
+    }
+}
+
+.casino .tips_section_item_img img {
+    @media(max-width:576px) {
+        max-width: 156px;
+        width: 100%;
+        max-height: 158px;
+        height: 100%;
+        position: static;
+    }
+}
+
+.casino .tips_section_item_title::before {
+    @media(max-width:576px) {
+        top: 50%;
+    }
+}
+
+.casino .tips_section_item::before {
+    @media(max-width:576px) {
+        display: block;
+    }
+}
+
+.tips_section_bg {
+    max-width: 100%;
+    position: absolute;
+    top: -30px;
+}
+
+.tips_section_bg img {
+    max-width: 100%;
+}
+
+.tips_section_bg_center {
+    display: block;
+    margin: 0 auto;
+
+    @media(max-width:576px) {
+        display: none;
+    }
+}
+
+.tips_section_bg_seven {
+    left: 0;
+
+    @media(max-width:576px) {
+        display: none;
+    }
+}
+
+.tips_section_bg_cards {
+    right: 0;
+
+    @media(max-width:576px) {
+        display: none;
+    }
+}
+
+.tips_section_bg_mob {
+    right: -15px;
+    top: -200px;
+    display: none;
+
+    @media(max-width:576px) {
+        display: block;
     }
 }

@@ -80,9 +80,10 @@
 .real_money_item_text {
     font: 700 18px/22px 'Montserrat', sans-serif;
     color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(0, #FF4646 100%, #C2206E 100%);
     padding: 19px 15px;
+    background-image: linear-gradient(135deg, #FF4646 30%, #C2206E 50%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
     @media(max-width:576px) {
         font: 700 15px/18.3px 'Montserrat', sans-serif;

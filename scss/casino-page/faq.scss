@@ -1,0 +1,141 @@
+.faq {
+    padding: 87px 0 48px;
+    background-color: #151F31;
+    border-radius: 36px 36px 0px 0px;
+    overflow: hidden;
+
+    @media(max-width:576px) {
+        padding: 47px 0 0;
+    }
+}
+
+.faq .container {
+    position: relative;
+    z-index: 1;
+}
+
+.faq_inner {
+    max-width: 640px;
+    width: 100%;
+}
+
+.faq_title {
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+.faq_title::before {
+    margin: 0;
+    background: linear-gradient(98.03deg, #FF4646 0.58%, #C2206E 70.54%);
+}
+
+.faq_text {
+    font: 400 18px/27.5px 'Inter', sans-serif;
+    margin-bottom: 24px;
+
+    @media(max-width:576px) {
+        font: 400 15px/23.5px 'Inter', sans-serif;
+        margin-bottom: 14px;
+    }
+}
+
+.faq_item {
+    background-color: #0B1423;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+    @media(max-width:576px) {
+        margin-bottom: 8px;
+    }
+}
+
+
+.faq_item:last-child {
+    margin-bottom: 0;
+}
+
+.faq_q {
+    position: relative;
+    font: 600 18px/22.5px 'Inter', sans-serif;
+    color: #fff;
+    padding: 21px 30px 21px 0;
+    margin: 0 20px 0 33px;
+    cursor: pointer;
+
+    @media(max-width:576px) {
+        font: 600 14px/16px 'Inter', sans-serif;
+        margin: 0 20px 0 24px;
+    }
+}
+
+.faq_q.active {
+    border-bottom: 1px solid #1D283A;
+}
+
+.faq_q::before {
+    position: absolute;
+    top: 21px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    background-image: url('../img/faq/faq_arrow.svg');
+    object-fit: cover;
+    width: 27px;
+    height: 27px;
+}
+.faq_q.active::before {
+    transform: rotate(180deg);
+    top: 35%;
+    right: -2px;
+}
+
+.faq_a {
+    display: none;
+    font: 400 18px/27.5px 'Inter', sans-serif;
+    padding: 20px 20px 33px 33px;
+
+    @media(max-width:576px) {
+        font: 400 15px/23.5px 'Inter', sans-serif;
+        padding: 15px 23px 24px 23px;
+    }
+}
+
+.faq_img {
+    position: absolute;
+    bottom: -52px;
+    right: 0;
+    z-index: -1;
+
+    @media(max-width:991px) {
+        right: -150px;
+        bottom: -150px;
+    }
+
+    @media(max-width:576px) {
+        display: none;
+    }
+}
+
+.faq_img img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.faq_img_mob {
+    text-align: center;
+    display: none;
+
+    @media(max-width:576px) {
+        display: block;
+        margin: 0 -15px;
+    }
+}
+
+.faq_img_mob img {
+    display: block;
+    max-width: 576px;
+    width: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}

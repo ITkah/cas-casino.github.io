@@ -1,0 +1,244 @@
+.table_section {
+    padding: 56px 0 51px;
+
+    @media(max-width:576px) {
+        padding: 20px 0 37px;
+    }
+}
+
+.table_section_title {
+    text-align: center;
+    font: 700 36px/46px 'Montserrat', sans-serif;
+    margin-bottom: 18px;
+
+    @media(max-width:576px) {
+        display: none;
+    }
+}
+
+.table_section_category {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8px;
+
+    @media(max-width:576px) {
+        display: none;
+    }
+}
+
+.table_section_category_item {
+    text-align: center;
+    font: 700 18px/22px 'Montserrat', sans-serif;
+    background-color: #151F31;
+    border-radius: 10px;
+    padding: 17px;
+}
+
+.table_section_content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 8px;
+
+    @media(max-width:576px) {
+        display: block;
+        background-color: #151F31;
+        padding: 0 14px 0 21px;
+        margin-bottom: 14px;
+        border-radius: 12px;
+    }
+}
+
+.table_section_content_span {
+    color: #77B9FF;
+}
+
+.table_section_content_item {
+    position: relative;
+    font: 400 14px/21px 'Inter', sans-serif;
+    padding: 20px 30px 20px 46px;
+    border-bottom: 1px solid #1D283A;
+
+    @media(max-width:576px) {
+        font: 400 12px/20px 'Inter', sans-serif;
+        padding: 15px 0 15px 32px;
+    }
+}
+
+.table_section_content_item::before {
+    display: none;
+    content: attr(data-label);
+    font: 600 12px/16px 'Inter', sans-serif;
+    color: #D8D5DE;
+    margin-bottom: 10px;
+
+    @media(max-width:576px) {
+        display: block;
+        margin-left: -32px;
+    }
+}
+
+.table_section_content_item::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    content: '';
+    background-image: url('../img/table_section/check.svg');
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    border-radius: 50%;
+
+    @media(max-width:576px) {
+        width: 20px;
+        height: 20px;
+        top: 61%;
+    }
+}
+
+.table_section_content:last-child .table_section_content_item {
+    @media(max-width:576px) {
+        border-bottom: 1px solid #1D283A;
+    }
+}
+.table_section_content:last-child .table_section_content_item:last-child {
+    @media(max-width:576px) {
+        border: transparent;
+    }
+}
+
+.table_section_content_item:last-child {
+    @media(max-width:576px) {
+        border: transparent;
+    }
+}
+
+.table_section_author {
+    position: relative;
+    max-width: 740px;
+    width: 100%;
+    margin: 50px auto 0;
+    display: flex;
+    align-items: center;
+    background-color: #151F31;
+    border-radius: 12px;
+    padding: 24px 17px 24px 30px;
+
+    @media(max-width:660px) {
+        padding: 15px 15px 20px 15px;
+    }
+    @media(max-width:576px) {
+        margin: 0 auto 0;
+    }
+}
+
+.table_section_photo {
+    display: block;
+    margin-right: 35px;
+
+    @media(max-width:660px) {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
+}
+
+.table_section_photo img {
+    max-width: 100px;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+    object-fit: cover;
+
+    @media(max-width:660px) {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+.table_section_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 10px;
+
+    @media(max-width:660px) {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.table_section_info_title {
+    margin-bottom: 4px;
+
+    @media(max-width:660px) {
+        margin-left: 65px;
+    }
+}
+
+.table_section_info_title img {
+    width: 70px;
+    height: 30px;
+    object-fit: cover;
+
+    @media(max-width:660px) {
+        width: 59 px;
+        height: 23px;
+    }
+}
+
+.table_section_name {
+    font: 700 18px/22px 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+
+    @media(max-width:660px) {
+        font: 700 15px/18.3px 'Montserrat', sans-serif;
+        margin-left: 65px;
+    }
+}
+
+.table_section_social {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media(max-width:660px) {
+        justify-content: space-between;
+    }
+}
+
+.table_section_social_item {
+    margin-right: 18px;
+    margin-bottom: 10px;
+
+    @media(max-width:660px) {
+        margin: 0;
+    }
+}
+
+.table_section_social_link img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.table_section_text {
+    max-width: 250px;
+    width: 100%;
+    margin-right: 0;
+    margin-left: auto;
+    font: 400 14px/21px 'Inter', sans-serif;
+
+    @media(max-width:660px) {
+        display: none;
+    }
+}
+
+.table_section_text_mob {
+    display: none;
+
+    @media(max-width:660px) {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+}

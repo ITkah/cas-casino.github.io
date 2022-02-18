@@ -27,7 +27,8 @@ body {
     padding: 0 15px;
 }
 
-ul {
+ul,
+ol {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -115,10 +116,12 @@ a {
 }
 
 .btn {
+    display: block;
     text-align: center;
     color: #fff;
     background: linear-gradient(98.03deg, #FF4646 0.58%, #C2206E 70.54%);
     border-radius: 16px;
+    border: 1px solid transparent;
 }
 
 .btn:hover {
@@ -130,11 +133,18 @@ a {
     background: linear-gradient(94.61deg, #FF644F 0.35%, #FF228C 103.27%);
     box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.25);
 }
+
 .btn.disabled {
     background: #1D283A;
+    transition: background 0.3s, box-shadow 0.3s, border 0.3s;
+    border: 1px solid transparent;
 }
 
 .btn.disabled:hover {
-    background: #1D283A;
+    background: #25324A;
     box-shadow: 0px 4px 17px transparent;
+}
+
+.btn.disabled:active {
+    border: 1px solid #807E87;
 }

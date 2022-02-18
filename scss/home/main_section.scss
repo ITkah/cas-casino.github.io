@@ -1,5 +1,6 @@
 .main_section_wrap {
     padding: 140px 0;
+
     @media (max-width: 990px) {
         padding: 30px 0 20px 0;
     }
@@ -14,10 +15,12 @@
     right: 0;
     display: block;
     top: 0;
+
     @media (max-width: 990px) {
         position: relative;
         margin-top: 35px;
     }
+
     img {
         max-width: 100%;
         height: auto;
@@ -31,6 +34,7 @@
 
 .main_section {
     position: relative;
+
     &_pretitle {
         color: #fff;
         display: flex;
@@ -41,29 +45,35 @@
         border-radius: 74px;
         max-width: 200px;
         justify-content: center;
-        font: 500 16px 'Inter', sans-serif;   
+        font: 500 16px 'Inter', sans-serif;
+
         img {
             margin-right: 6px;
         }
     }
+
     &_title {
         color: #fff;
         margin-bottom: 10px;
         font: 700 40px/51px 'Montserrat', sans-serif;
+
         @media (max-width: 990px) {
             font: 700 28px/36px 'Montserrat', sans-serif;
         }
     }
+
     &_text {
         color: #D8D5DE;
         margin-bottom: 55px;
         max-width: 450px;
-        font:400 18px/27px 'Inter', sans-serif;
+        font: 400 18px/27px 'Inter', sans-serif;
+
         @media (max-width: 990px) {
             font: 400 15px/23px 'Montserrat', sans-serif;
             margin-bottom: 25px;
         }
     }
+
     &_btn {
         position: relative;
         font: 700 18px 'Montserrat', sans-serif;
@@ -73,11 +83,168 @@
         justify-content: center;
         max-width: 180px;
         background: linear-gradient(98.03deg, #FF4646 0.58%, #C2206E 70.54%);
+
         @media (max-width: 990px) {
             font: 700 15px 'Montserrat', sans-serif;
         }
+
         img {
             margin-left: 12px;
         }
+    }
+}
+
+.main_section_nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 38px 24px 23px 10px;
+    background-color: #151F31;
+    border-radius: 12px;
+    margin-top: 30px;
+
+    @media(max-width:576px) {
+        padding: 16px 22px 1px 8px;
+        margin-top: 0;
+    }
+}
+
+.main_section_nav_item {
+    position: relative;
+    padding-right: 18px;
+    margin: 0 0 15px 14px;
+}
+
+.main_section_nav_item::before {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #77B9FF;
+}
+
+.main_section_nav_item:last-child {
+    padding-right: 0;
+}
+
+.main_section_nav_item:last-child::before {
+    display: none;
+}
+
+.main_section_nav_link {
+    font: 500 15px/18.3px 'Montserrat', sans-serif;
+    color: #fff;
+    text-decoration: underline;
+
+    @media(max-width:576px) {
+        font: 500 12px/14.6px 'Montserrat', sans-serif;
+    }
+}
+
+.main_section_inner .main_section_wrap {
+    padding: 60px 0;
+}
+
+.main_section_pretitle_wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.main_section_casino .main_section_wrap {
+    padding: 60px 0;
+
+    @media(max-width:576px) {
+        padding: 30px 0 0;
+    }
+}
+
+.main_section_casino .main_section_pretitle {
+    margin: 0 15px 0 0;
+}
+
+.main_section_data {
+    max-width: 415px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: #1D283A;
+    border-radius: 8px;
+    font: 400 14px/16px 'Inter', sans-serif;
+    margin-bottom: 48px;
+
+    @media(max-width:576px) {
+        display: none;
+    }
+}
+
+.main_section_data_rev {
+    margin-right: 8px;
+}
+
+.main_section_data_name {
+    font: 700 14px/16px 'Inter', sans-serif;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.main_section_data_time {
+    position: relative;
+    padding-left: 21px;
+}
+
+.main_section_data_time::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    background-image: url('../img/main_section/clock.svg');
+    background-size: cover;
+    width: 12px;
+    height: 12px;
+}
+
+.main_section_btn_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.main_section_casino .main_section_btn {
+    margin-right: 15px;
+
+    @media(max-width:576px) {
+        padding: 20px 27px;
+        margin-bottom: 10px;
+    }
+}
+
+.main_section_casino .main_section_text {
+    max-width: 502px;
+    margin-bottom: 15px;
+}
+
+.main_section_casino .main_section_img {
+    @media(max-width: 1366px) {
+        text-align: center;
+        position: relative;
+        margin: 0 auto 0;
+    }
+}
+
+.main_section_casino .main_section_star {
+    @media(max-width:576px) {
+        display: none;
+    }
+}
+
+.mob_casinos .main_section_nav {
+    @media(max-width:576px) {
+        display: none;
     }
 }

@@ -1,0 +1,168 @@
+.support_section {
+    background-color: #1D283A;
+
+    @media(max-width:576px) {
+        background-color: transparent;
+        margin-bottom: 24px;
+    }
+}
+
+.containe_fluid {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media(max-width:576px) {
+        padding: 0;
+    }
+}
+
+.support_section_inner {
+    display: flex;
+    align-items: center;
+
+    @media(max-width:576px) {
+        display: block;
+    }
+}
+
+.support_section_img img {
+    display: block;
+    max-width: 100%;
+    min-width: 400px;
+    object-fit: contain;
+
+    @media(max-width:991px) {
+        display: none;
+    }
+}
+
+.support_section_img_mob {
+    display: none;
+
+    @media(max-width:576px) {
+        display: block;
+    }
+}
+
+.support_section_img_mob img {
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.support_section_content {
+    padding: 30px 20px 30px 0;
+    max-width: 600px;
+    width: 100%;
+    margin-left: 45px;
+
+    @media(max-width:576px) {
+        padding: 0 15px;
+        margin-left: 0;
+    }
+}
+
+.support_section_title {
+    display: flex;
+    align-items: center;
+    font: 700 36px/46px 'Montserrat', sans-serif;
+    margin-bottom: 23px;
+    background: linear-gradient(135deg, #3DE8FF 20%, #1C69FF 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media(max-width:576px) {
+        text-align: center;
+        flex-direction: column;
+        font: 700 24px/31px 'Montserrat', sans-serif;
+        margin: 24px 0 14px;
+        padding: 0 10px;
+    }
+}
+
+.support_section_title img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 32px;
+    height: 32px;
+}
+
+.support_section_title_img {
+    position: relative;
+    background-color: #0B1423;
+    border-radius: 14px;
+    width: 54px;
+    height: 54px;
+    margin-right: 15px;
+
+    @media(max-width:576px) {
+        margin: 0 0 7px 0;
+        background-color: #1D283A;
+    }
+}
+
+.support_section_text {
+    font: 500 18px/27.5px 'Montserrat', sans-serif;
+    color: #fff;
+    margin-top: 35px;
+
+    @media(max-width:576px) {
+        font: 400 15px/23.5px 'Montserrat', sans-serif;
+        margin-top: 20px;
+    }
+}
+
+.support_section_text:first-child {
+    margin-top: 0;
+}
+
+.support_section_email_wrap {
+    background-color: #151F31;
+    border-radius: 13px;
+    padding: 20px 21px;
+    margin: 26px 0 44px;
+
+    @media(max-width:576px) {
+        margin: 14px 0;
+        padding: 20px 15px;
+    }
+}
+
+.support_section_email {
+    display: flex;
+    align-items: center;
+    font: 700 18px/24.5px 'Montserrat', sans-serif;
+    color: #FAF7FF;
+    max-width: fit-content;
+
+    @media(max-width:576px) {
+        font: 700 16px/22px 'Montserrat', sans-serif;
+    }
+}
+
+.support_section_email img {
+    max-width: 26px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-right: 15px;
+
+    @media(max-width:576px) {
+        margin-right: 9px;
+    }
+}
+
+.support_section_note {
+    font: 700 18px/24.5px 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #3DE8FF 20%, #1C69FF 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @media(max-width:576px) {
+        font: 700 14px/19px 'Montserrat', sans-serif;
+    }
+}
